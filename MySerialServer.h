@@ -23,6 +23,10 @@ class MySerialServer :  public server_side::Server {
  private:
   ClientHandler *handler;
  public:
+    MySerialServer(ClientHandler* ch){
+        this->handler = ch;
+    }
+
     void open(int port, ClientHandler* ch) override;
     void stop() override;
 };

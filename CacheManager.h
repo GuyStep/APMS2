@@ -14,10 +14,14 @@
 #include <fstream>
 using namespace std;
 
+template <class P,class S>
 class CacheManager {
+    virtual
+
+virtual bool isExist(P* problem) = 0; // What is the parameter???? @@@@@@@@@@@@@@@@@@@@@@@@@@
+virtual S returnSolution(P* problem) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@
+virtual bool saveSolution(P* problem, S* solution) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@@@
 };
-
-
 
 /*
 
@@ -25,9 +29,9 @@ class CacheManager {
 
 
 
-    virtual bool isExist() = 0; // What is the parameter???? @@@@@@@@@@@@@@@@@@@@@@@@@@
-    virtual bool returnSolution() = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@@@
-    virtual bool saveSolution() = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@@@
+
+    @@
+
 };
 */
 

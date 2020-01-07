@@ -6,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
   "CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
+  "CMakeFiles/APMS2.dir/Solver.cpp.o"
+  "CMakeFiles/APMS2.dir/StringReverser.cpp.o"
+  "CMakeFiles/APMS2.dir/boot_file.cpp.o"
   "CMakeFiles/APMS2.dir/server_file.cpp.o"
 )
 

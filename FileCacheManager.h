@@ -7,94 +7,53 @@
 
 #include "CacheManager.h"
 
-<T> class FileCacheManager : public CacheManager  {
+template<class P, class S>
+class FileCacheManager : public CacheManager<P,S> {
  private:
-  unordered_map <string,pair<T,list<string>::iterator>> myCache {};
-  list<string> priorityList;
-  unsigned long capacityCache;
+  unordered_map <P,bool> myCache {};
+
  public:
-  CacheManager(int capacity) {
-    this->capacityCache = capacity;
+    FileCacheManager()= default;
+  void saveSolution(P key, S solution) override{
+      myCache.insert(pair<P, bool>(key, true));
+      writeToFile(key, solution);
   }
-  void insert(string key, T obj) {
-    if (myCache.find(key) != myCache.end()) { //key exist in cache
-      auto bufPair = myCache.find(key);
-      priorityList.remove(*(bufPair->second.second));
-      priorityList.push_front(key);
-      myCache.erase(key);
-      auto iter = priorityList.begin();
-      myCache.insert(pair<string,pair<T, list<string>::iterator>>(key,pair<T,list<string>::iterator>(obj,iter)));
-      writeToFile(key,obj);
-      return;
-    }
 
-    //there is place in the cache
-    if (myCache.size() < this->capacityCache) {
-      priorityList.push_front(key);
-      auto iter = priorityList.begin();
-      myCache.insert(pair<string, pair<T, list<string>::iterator>>(key, pair<T, list<string>::iterator>(obj, iter)));
-      writeToFile(key,obj);
 
-    } else { // no place and need to replace
-      //erase the last one
-      string keyBack = priorityList.back();
-      myCache.erase(keyBack);
-      //insert the new object
-      priorityList.remove(keyBack);
-      priorityList.push_front(key);
-      auto iter = priorityList.begin();
-      myCache.insert(pair<string, pair<T, list<string>::iterator>>(key, pair<T, list<string>::iterator>(obj, iter)));
-      writeToFile(key,obj);
-    }
-  }
-  void writeToFile(string key,T obj) {
-    string file_name = obj.class_name;
+  void writeToFile(P key, S solution) { // We need to take care of double names
+    string file_name = key.class_name + key;
     fstream myFile;
-    myFile.open(key + file_name, ios::out | ios :: binary | ios::trunc);
+    myFile.open(file_name, ios::out | ios :: binary | ios::trunc);
     if (myFile.is_open()) {
-      myFile.write((char *)&obj, sizeof(obj));
+      myFile.write((char *)&solution, sizeof(solution));
       myFile.close();
     } else {
       throw ("file didnt open");
     }
   }
-  T readFromFile(string key,T obj) {
-    string file_name = obj.class_name;
-    ifstream infile(key + file_name, ios::binary | ios:: in);
+
+  S readFromFile(P key,S solution) {
+    ifstream infile(key, ios::binary | ios:: in);
     if (!infile) {
       throw ("cant open file");
     }
-    infile.read((char *) &obj, sizeof(obj));
+    infile.read((char *) &solution, sizeof(solution));
     infile.close();
-    return obj;
+    return solution;
   }
-  T get(string key) {
-    //exist in the list
-    if (myCache.find(key) != myCache.end()) {
-      auto bufPair = myCache.find(key);
-      priorityList.remove(*(bufPair->second.second));
-      priorityList.push_front(key);
-      bufPair->second.second = priorityList.begin();
-      return bufPair->second.first;
-    }/// not in cache
-    string fileName = key + T::class_name;
-    bool flag = fexists(fileName);
+
+  S returnSolution(P key,S solution) override {
+    string file_name = key.class_name + key;
+    bool flag = isExist(file_name);
     if (flag) {
-      T object1 = readFromFile(key, object1);
-      string keyBack = priorityList.back();
-      auto bufPair = myCache.find(keyBack);
-      priorityList.remove(*(bufPair->second.second));
-      myCache.erase(keyBack);
-      priorityList.push_front(key);
-      auto iter = priorityList.begin();
-      myCache.insert(pair<string, pair<T, list<string>::iterator>>(key, pair<T, list<string>::iterator>(object1, iter)));
+      S object1 = readFromFile(key, object1);
       return object1;
     } else {
       throw ("file doesnt exist");
     }
   }
-  bool fexists(string filename)
-  {
+
+  bool isExist(string filename) override{
     ifstream ifile(filename);
     return (bool)ifile;
   }

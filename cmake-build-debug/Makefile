@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amittulman/Desktop/APMS2
+CMAKE_SOURCE_DIR = /home/guy/CLionProjects/APMS2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amittulman/Desktop/APMS2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/guy/CLionProjects/APMS2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/amittulman/Desktop/APMS2/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles /home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles /home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -258,6 +258,87 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
+Solver.o: Solver.cpp.o
+
+.PHONY : Solver.o
+
+# target to build an object file
+Solver.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.o
+.PHONY : Solver.cpp.o
+
+Solver.i: Solver.cpp.i
+
+.PHONY : Solver.i
+
+# target to preprocess a source file
+Solver.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.i
+.PHONY : Solver.cpp.i
+
+Solver.s: Solver.cpp.s
+
+.PHONY : Solver.s
+
+# target to generate assembly for a file
+Solver.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.s
+.PHONY : Solver.cpp.s
+
+StringReverser.o: StringReverser.cpp.o
+
+.PHONY : StringReverser.o
+
+# target to build an object file
+StringReverser.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.o
+.PHONY : StringReverser.cpp.o
+
+StringReverser.i: StringReverser.cpp.i
+
+.PHONY : StringReverser.i
+
+# target to preprocess a source file
+StringReverser.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.i
+.PHONY : StringReverser.cpp.i
+
+StringReverser.s: StringReverser.cpp.s
+
+.PHONY : StringReverser.s
+
+# target to generate assembly for a file
+StringReverser.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.s
+.PHONY : StringReverser.cpp.s
+
+boot_file.o: boot_file.cpp.o
+
+.PHONY : boot_file.o
+
+# target to build an object file
+boot_file.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.o
+.PHONY : boot_file.cpp.o
+
+boot_file.i: boot_file.cpp.i
+
+.PHONY : boot_file.i
+
+# target to preprocess a source file
+boot_file.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.i
+.PHONY : boot_file.cpp.i
+
+boot_file.s: boot_file.cpp.s
+
+.PHONY : boot_file.s
+
+# target to generate assembly for a file
+boot_file.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.s
+.PHONY : boot_file.cpp.s
+
 server_file.o: server_file.cpp.o
 
 .PHONY : server_file.o
@@ -309,6 +390,15 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
+	@echo "... Solver.o"
+	@echo "... Solver.i"
+	@echo "... Solver.s"
+	@echo "... StringReverser.o"
+	@echo "... StringReverser.i"
+	@echo "... StringReverser.s"
+	@echo "... boot_file.o"
+	@echo "... boot_file.i"
+	@echo "... boot_file.s"
 	@echo "... server_file.o"
 	@echo "... server_file.i"
 	@echo "... server_file.s"

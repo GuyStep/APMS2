@@ -7,10 +7,24 @@
 
 
 #include "ClientHandler.h"
+#include "CacheManager.h"
+#include "Solver.h"
 
+template<class P, class S>
 class MyTestClientHandler : public ClientHandler{
-  void handleClient(std::istream is, std::ostream os) override;
+public:
+    MyTestClientHandler(Solver<P,S> s, CacheManager<P,S> cm){
+        this->solver = s;
+        this->cache_manager = cm;
+    }
+private:
+
+    Solver<P,S> solver;
+    CacheManager<P,S> cache_manager;
+
+    void handleClient(std::istream is, std::ostream os) override;
 };
+
 
 
 #endif //APMS2_MYTESTCLIENTHANDLER_H

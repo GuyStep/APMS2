@@ -7,6 +7,7 @@
 
 #include <iostream>
 
+
 class ClientHandler {
 public:
     virtual void handleClient(std::istream is, std::ostream os) = 0;
