@@ -86,10 +86,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/guy/CLionProjects/APMS2/CacheManager.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/CacheManager.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/ClientHandler.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/ClientHandler.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.h">
+			<Option target="APMS2"/>
+		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/MySerialServer.cpp">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/MySerialServer.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.h">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/server_file.cpp">

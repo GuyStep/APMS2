@@ -1,7 +1,11 @@
 file(REMOVE_RECURSE
   "APMS2"
   "APMS2.pdb"
+  "CMakeFiles/APMS2.dir/CacheManager.cpp.o"
+  "CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
+  "CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
+  "CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/APMS2.dir/server_file.cpp.o"
 )
 

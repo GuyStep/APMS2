@@ -9,4 +9,4 @@ add_executable(APMS2
         MySerialServer.cpp
         MySerialServer.h
         server_file.cpp
-        server_file.h)
+        server_file.h ClientHandler.cpp ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h CacheManager.cpp CacheManager.h FileCacheManager.cpp FileCacheManager.h)

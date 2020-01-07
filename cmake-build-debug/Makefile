@@ -123,6 +123,87 @@ APMS2/fast:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/build
 .PHONY : APMS2/fast
 
+CacheManager.o: CacheManager.cpp.o
+
+.PHONY : CacheManager.o
+
+# target to build an object file
+CacheManager.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/CacheManager.cpp.o
+.PHONY : CacheManager.cpp.o
+
+CacheManager.i: CacheManager.cpp.i
+
+.PHONY : CacheManager.i
+
+# target to preprocess a source file
+CacheManager.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/CacheManager.cpp.i
+.PHONY : CacheManager.cpp.i
+
+CacheManager.s: CacheManager.cpp.s
+
+.PHONY : CacheManager.s
+
+# target to generate assembly for a file
+CacheManager.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/CacheManager.cpp.s
+.PHONY : CacheManager.cpp.s
+
+ClientHandler.o: ClientHandler.cpp.o
+
+.PHONY : ClientHandler.o
+
+# target to build an object file
+ClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.o
+.PHONY : ClientHandler.cpp.o
+
+ClientHandler.i: ClientHandler.cpp.i
+
+.PHONY : ClientHandler.i
+
+# target to preprocess a source file
+ClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.i
+.PHONY : ClientHandler.cpp.i
+
+ClientHandler.s: ClientHandler.cpp.s
+
+.PHONY : ClientHandler.s
+
+# target to generate assembly for a file
+ClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.s
+.PHONY : ClientHandler.cpp.s
+
+FileCacheManager.o: FileCacheManager.cpp.o
+
+.PHONY : FileCacheManager.o
+
+# target to build an object file
+FileCacheManager.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.o
+.PHONY : FileCacheManager.cpp.o
+
+FileCacheManager.i: FileCacheManager.cpp.i
+
+.PHONY : FileCacheManager.i
+
+# target to preprocess a source file
+FileCacheManager.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.i
+.PHONY : FileCacheManager.cpp.i
+
+FileCacheManager.s: FileCacheManager.cpp.s
+
+.PHONY : FileCacheManager.s
+
+# target to generate assembly for a file
+FileCacheManager.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.s
+.PHONY : FileCacheManager.cpp.s
+
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -149,6 +230,33 @@ MySerialServer.s: MySerialServer.cpp.s
 MySerialServer.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MySerialServer.cpp.s
 .PHONY : MySerialServer.cpp.s
+
+MyTestClientHandler.o: MyTestClientHandler.cpp.o
+
+.PHONY : MyTestClientHandler.o
+
+# target to build an object file
+MyTestClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o
+.PHONY : MyTestClientHandler.cpp.o
+
+MyTestClientHandler.i: MyTestClientHandler.cpp.i
+
+.PHONY : MyTestClientHandler.i
+
+# target to preprocess a source file
+MyTestClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.i
+.PHONY : MyTestClientHandler.cpp.i
+
+MyTestClientHandler.s: MyTestClientHandler.cpp.s
+
+.PHONY : MyTestClientHandler.s
+
+# target to generate assembly for a file
+MyTestClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s
+.PHONY : MyTestClientHandler.cpp.s
 
 server_file.o: server_file.cpp.o
 
@@ -186,9 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... APMS2"
 	@echo "... edit_cache"
+	@echo "... CacheManager.o"
+	@echo "... CacheManager.i"
+	@echo "... CacheManager.s"
+	@echo "... ClientHandler.o"
+	@echo "... ClientHandler.i"
+	@echo "... ClientHandler.s"
+	@echo "... FileCacheManager.o"
+	@echo "... FileCacheManager.i"
+	@echo "... FileCacheManager.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
+	@echo "... MyTestClientHandler.o"
+	@echo "... MyTestClientHandler.i"
+	@echo "... MyTestClientHandler.s"
 	@echo "... server_file.o"
 	@echo "... server_file.i"
 	@echo "... server_file.s"

@@ -83,19 +83,79 @@ CMakeFiles/APMS2.dir/server_file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/server_file.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/server_file.cpp -o CMakeFiles/APMS2.dir/server_file.cpp.s
 
+CMakeFiles/APMS2.dir/ClientHandler.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/ClientHandler.cpp.o: ../ClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/ClientHandler.cpp.o -c /home/guy/CLionProjects/APMS2/ClientHandler.cpp
+
+CMakeFiles/APMS2.dir/ClientHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/ClientHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/APMS2/ClientHandler.cpp > CMakeFiles/APMS2.dir/ClientHandler.cpp.i
+
+CMakeFiles/APMS2.dir/ClientHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/ClientHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/ClientHandler.cpp -o CMakeFiles/APMS2.dir/ClientHandler.cpp.s
+
+CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o -c /home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp
+
+CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp > CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.i
+
+CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp -o CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s
+
+CMakeFiles/APMS2.dir/CacheManager.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/CacheManager.cpp.o: ../CacheManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/APMS2.dir/CacheManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/CacheManager.cpp.o -c /home/guy/CLionProjects/APMS2/CacheManager.cpp
+
+CMakeFiles/APMS2.dir/CacheManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/CacheManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/APMS2/CacheManager.cpp > CMakeFiles/APMS2.dir/CacheManager.cpp.i
+
+CMakeFiles/APMS2.dir/CacheManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/CacheManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/CacheManager.cpp -o CMakeFiles/APMS2.dir/CacheManager.cpp.s
+
+CMakeFiles/APMS2.dir/FileCacheManager.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/FileCacheManager.cpp.o -c /home/guy/CLionProjects/APMS2/FileCacheManager.cpp
+
+CMakeFiles/APMS2.dir/FileCacheManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/FileCacheManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/APMS2/FileCacheManager.cpp > CMakeFiles/APMS2.dir/FileCacheManager.cpp.i
+
+CMakeFiles/APMS2.dir/FileCacheManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/FileCacheManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/FileCacheManager.cpp -o CMakeFiles/APMS2.dir/FileCacheManager.cpp.s
+
 # Object files for target APMS2
 APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/MySerialServer.cpp.o" \
-"CMakeFiles/APMS2.dir/server_file.cpp.o"
+"CMakeFiles/APMS2.dir/server_file.cpp.o" \
+"CMakeFiles/APMS2.dir/ClientHandler.cpp.o" \
+"CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o" \
+"CMakeFiles/APMS2.dir/CacheManager.cpp.o" \
+"CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
 
 # External object files for target APMS2
 APMS2_EXTERNAL_OBJECTS =
 
 APMS2: CMakeFiles/APMS2.dir/MySerialServer.cpp.o
 APMS2: CMakeFiles/APMS2.dir/server_file.cpp.o
+APMS2: CMakeFiles/APMS2.dir/ClientHandler.cpp.o
+APMS2: CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o
+APMS2: CMakeFiles/APMS2.dir/CacheManager.cpp.o
+APMS2: CMakeFiles/APMS2.dir/FileCacheManager.cpp.o
 APMS2: CMakeFiles/APMS2.dir/build.make
 APMS2: CMakeFiles/APMS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable APMS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable APMS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/APMS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

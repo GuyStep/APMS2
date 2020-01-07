@@ -5,7 +5,10 @@
 #ifndef APMS2_MYSERIALSERVER_H
 #define APMS2_MYSERIALSERVER_H
 
-class MySerialServer:: server_side::Server {
+#include "server_file.h"
+
+class MySerialServer :  public server_side::Server {
+
 };
 
 
