@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/APMS2.dir/MySerialServer.cpp.o CMakeFiles/APMS2.dir/server_file.cpp.o  -o APMS2 
