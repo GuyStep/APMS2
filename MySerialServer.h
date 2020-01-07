@@ -6,7 +6,6 @@
 #define APMS2_MYSERIALSERVER_H
 
 class MySerialServer:: server_side::Server {
-h hih;a;
 };
 
 
