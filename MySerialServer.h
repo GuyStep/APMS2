@@ -6,15 +6,27 @@
 #define APMS2_MYSERIALSERVER_H
 
 #include "server_file.h"
+#include "ClientHandler.h"
+#include "MyTestClientHandler.h"
+#include <sys/socket.h>
+#include <iostream>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <string.h>
+#include <string>
+#include <vector>
+#include <thread>
+
+using namespace std;
 
 class MySerialServer :  public server_side::Server {
-    void open(int port, int ch) override{
+ private:
+  ClientHandler handler;
+ public:
+    void open(int port, ClientHandler ch) override;
 
-    }
-    void stop() override{
-
-    }
+    void stop() override;
 };
-
+void start(int serverSocket,sockaddr_in address, ClientHandler ch);
 
 #endif //APMS2_MYSERIALSERVER_H

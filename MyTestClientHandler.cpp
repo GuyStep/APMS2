@@ -3,3 +3,9 @@
 //
 
 #include "MyTestClientHandler.h"
+
+using namespace std;
+void MyTestClientHandler::handleClient(std::istream is, std::ostream os) {
+  cout << "in handler" << endl;
+
+}

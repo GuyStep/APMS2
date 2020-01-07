@@ -5,6 +5,7 @@
 #ifndef APMS2_SERVER_FILE_H
 #define APMS2_SERVER_FILE_H
 
+#include "ClientHandler.h"
 namespace server_side {
     class Server;
 }

@@ -9,7 +9,7 @@
 #include "ClientHandler.h"
 
 class MyTestClientHandler : public ClientHandler{
-
+  void handleClient(std::istream is, std::ostream os) override;
 };
 
 
