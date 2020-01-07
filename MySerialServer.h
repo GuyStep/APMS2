@@ -8,7 +8,12 @@
 #include "server_file.h"
 
 class MySerialServer :  public server_side::Server {
+    void open(int port, int ch) override{
 
+    }
+    void stop() override{
+
+    }
 };
 
 
