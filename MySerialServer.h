@@ -21,12 +21,11 @@ using namespace std;
 
 class MySerialServer :  public server_side::Server {
  private:
-  ClientHandler handler;
+  ClientHandler *handler;
  public:
-    void open(int port, ClientHandler ch) override;
-
+    void open(int port, ClientHandler* ch) override;
     void stop() override;
 };
-void start(int serverSocket,sockaddr_in address, ClientHandler ch);
+void start(int serverSocket,sockaddr_in address, ClientHandler* ch);
 
 #endif //APMS2_MYSERIALSERVER_H

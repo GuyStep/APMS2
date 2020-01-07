@@ -4,8 +4,8 @@
 
 #include "MySerialServer.h"
 
-void MySerialServer::open(int port, ClientHandler ch) {
-  this->handler = ch;
+void MySerialServer::open(int port, ClientHandler* handler) {
+  this->handler = handler;
   int serverSocket = socket(AF_INET, SOCK_STREAM, 0);
   if (serverSocket == -1) {
     //error
@@ -38,14 +38,14 @@ void MySerialServer::open(int port, ClientHandler ch) {
 
   // accepting a client
 
-  thread t1(start, serverSocket, address, ch);
+  thread t1(start, serverSocket, address, handler);
 
 }
 
 void MySerialServer::stop(){
 }
 
-void start(int serverSocket,sockaddr_in address,ClientHandler ch) {
+void start(int serverSocket,sockaddr_in address,ClientHandler* handler) {
   while (1) {
     char buffer[2048] = {0};
     socklen_t addrlen = sizeof(sockaddr_in);
@@ -54,10 +54,8 @@ void start(int serverSocket,sockaddr_in address,ClientHandler ch) {
 
     if (clientSocket == -1) {
       std::cerr << "SERVER : Error accepting client" << std::endl;
-
       return;
     }
-    ch.handleClient();
 //reading from client
     int valread = read(clientSocket, buffer, 2048);
   }

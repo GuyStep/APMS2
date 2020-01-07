@@ -11,7 +11,7 @@ namespace server_side {
 }
 class server_side::Server {
 public:
-    virtual void open(int port, ClientHandler ch) = 0;
+    virtual void open(int port, ClientHandler* ch) = 0;
     virtual void stop() = 0;
 };
 
