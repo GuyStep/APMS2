@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option working_dir="/home/amittulman/Desktop/APMS2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option working_dir="/home/amittulman/Desktop/APMS2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="APMS2">
-				<Option output="/home/guy/CLionProjects/APMS2/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option output="/home/amittulman/Desktop/APMS2/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amittulman/Desktop/APMS2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/guy/CLionProjects/APMS2/."/>
+					<Add directory="/home/amittulman/Desktop/APMS2/."/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -45,20 +45,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="APMS2/fast">
-				<Option output="/home/guy/CLionProjects/APMS2/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option output="/home/amittulman/Desktop/APMS2/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amittulman/Desktop/APMS2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/guy/CLionProjects/APMS2/."/>
+					<Add directory="/home/amittulman/Desktop/APMS2/."/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -69,60 +69,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option working_dir="/home/amittulman/Desktop/APMS2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/guy/CLionProjects/APMS2/CacheManager.cpp">
+		<Unit filename="/home/amittulman/Desktop/APMS2/MySerialServer.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/CacheManager.h">
+		<Unit filename="/home/amittulman/Desktop/APMS2/MySerialServer.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ClientHandler.cpp">
+		<Unit filename="/home/amittulman/Desktop/APMS2/server_file.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ClientHandler.h">
+		<Unit filename="/home/amittulman/Desktop/APMS2/server_file.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.cpp">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MySerialServer.cpp">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MySerialServer.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/server_file.cpp">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/server_file.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/CMakeLists.txt">
+		<Unit filename="/home/amittulman/Desktop/APMS2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
