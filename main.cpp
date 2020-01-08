@@ -11,6 +11,7 @@ int main(int argc, char** argv){
   auto *fcm = new FileCacheManager();
   auto *solver = new StringReverser();
   auto* ch = new MyTestClientHandler(solver,fcm);
-  //MySerialServer* server = new MySerialServer(ch);
+  auto* server = new MySerialServer(ch);
+  server->open(8080,ch);
   return 0;
 }

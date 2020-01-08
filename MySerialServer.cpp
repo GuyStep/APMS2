@@ -39,6 +39,7 @@ void MySerialServer::open(int port, ClientHandler* handler) {
   // accepting a client
 
   thread t1(start, serverSocket, address, handler);
+  t1.join();
 
 }
 
@@ -51,11 +52,11 @@ void start(int serverSocket,sockaddr_in address,ClientHandler* handler) {
     socklen_t addrlen = sizeof(sockaddr_in);
     int clientSocket = accept(serverSocket, (struct sockaddr *) &address,
                               &addrlen);
-
-    if (clientSocket == -1) {
+    if (clientSocket < 0) {
       std::cerr << "SERVER : Error accepting client" << std::endl;
       return;
     }
+    handler->handleClient(clientSocket);
 
   }
 }

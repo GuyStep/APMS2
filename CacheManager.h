@@ -16,6 +16,7 @@ using namespace std;
 
 
 class CacheManager {
+ public:
   virtual bool isExist(string problem) = 0; // What is the parameter???? @@@@@@@@@@@@@@@@@@@@@@@@@@
   virtual string returnSolution(string problem) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@
   virtual void saveSolution(string problem, string solution) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@@@
