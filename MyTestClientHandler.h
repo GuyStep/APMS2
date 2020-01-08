@@ -10,20 +10,20 @@
 #include "CacheManager.h"
 #include "Solver.h"
 
-template<class P, class S>
 class MyTestClientHandler : public ClientHandler{
 public:
-    MyTestClientHandler(Solver<P,S> s, CacheManager<P,S> cm){
+    MyTestClientHandler(Solver<string, string> *s, CacheManager *cm){
         this->solver = s;
         this->cache_manager = cm;
     }
+  void handleClient(int socket) override;
 private:
 
-    Solver<P,S> solver;
-    CacheManager<P,S> cache_manager;
+    Solver<string, string>* solver;
+    CacheManager* cache_manager;
 
-    void handleClient(std::istream is, std::ostream os) override;
 };
+
 
 
 

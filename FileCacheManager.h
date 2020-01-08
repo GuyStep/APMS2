@@ -7,21 +7,20 @@
 
 #include "CacheManager.h"
 
-template<class P, class S>
-class FileCacheManager : public CacheManager<P,S> {
+
+class FileCacheManager : public CacheManager {
  private:
-  unordered_map <P,bool> myCache {};
+  unordered_map <string,bool> myCache {};
 
  public:
     FileCacheManager()= default;
-  void saveSolution(P* key, S* solution) override{
-      myCache.insert(pair<P, bool>(key, true));
+  void saveSolution(string key, string solution) override{
+      myCache.insert(pair<string, bool>(key, true));
       writeToFile(key, solution);
   }
 
-
-  void writeToFile(P key, S solution) { // We need to take care of double names
-    string file_name = key.class_name + key;
+  void writeToFile(string key, string solution) { // We need to take care of double names
+    string file_name = key;
     fstream myFile;
     myFile.open(file_name, ios::out | ios :: binary | ios::trunc);
     if (myFile.is_open()) {
@@ -32,7 +31,7 @@ class FileCacheManager : public CacheManager<P,S> {
     }
   }
 
-  S readFromFile(P key,S solution) {
+  string readFromFile(string key,string solution) {
     ifstream infile(key, ios::binary | ios:: in);
     if (!infile) {
       throw ("cant open file");
@@ -42,18 +41,18 @@ class FileCacheManager : public CacheManager<P,S> {
     return solution;
   }
 
-  S returnSolution(P* key) override {
-    string file_name = (*key).class_name + key;
+  string returnSolution(string key) override {
+    string file_name = key;
     bool flag = isExist(file_name);
     if (flag) {
-      S object1 = readFromFile(key, object1);
+      string object1 = readFromFile(key, object1);
       return object1;
     } else {
       throw ("file doesnt exist");
     }
   }
 
-  bool isExist(P* problem) override{
+  bool isExist(string problem) override{
     ifstream ifile(problem);
     return (bool)ifile;
   }

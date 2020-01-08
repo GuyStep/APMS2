@@ -10,7 +10,7 @@
 
 class ClientHandler {
 public:
-    virtual void handleClient(std::istream is, std::ostream os) = 0;
+    virtual void handleClient(int socket) = 0;
 };
 
 

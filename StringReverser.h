@@ -7,13 +7,15 @@
 
 
 #include "Solver.h"
-template<class P, class S>
-class StringReverser : public Solver<P,S>{
-    S solve(P problem) override{
+#include "string"
+
+using namespace std;
+class StringReverser : public Solver<string,string> {
+    string solve(string problem) override{
         int n = problem.length();
 
         // Swap character starting from two
-        // corners
+        // from stack overflow
         for (int i = 0; i < n / 2; i++)
             swap(problem[i], problem[n - i - 1]);
         return problem;

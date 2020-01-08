@@ -5,11 +5,12 @@
 #include "MyTestClientHandler.h"
 #include "StringReverser.h"
 #include "FileCacheManager.h"
+using namespace std;
 
 int main(int argc, char** argv){
-  auto *fcm = new FileCacheManager<string, string>();
-  auto *solver = new StringReverser<string ,string>();
-  auto* ch = new MyTestClientHandler<class P,class S>(solver,fcm);
+  auto *fcm = new FileCacheManager();
+  auto *solver = new StringReverser();
+  auto* ch = new MyTestClientHandler(solver,fcm);
   //MySerialServer* server = new MySerialServer(ch);
   return 0;
 }
