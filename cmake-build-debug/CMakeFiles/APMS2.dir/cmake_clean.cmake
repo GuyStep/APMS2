@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/APMS2.dir/Solver.cpp.o"
   "CMakeFiles/APMS2.dir/StringReverser.cpp.o"
   "CMakeFiles/APMS2.dir/boot_file.cpp.o"
+  "CMakeFiles/APMS2.dir/main.cpp.o"
   "CMakeFiles/APMS2.dir/server_file.cpp.o"
 )
 

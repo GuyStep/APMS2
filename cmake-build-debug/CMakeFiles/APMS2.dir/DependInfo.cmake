@@ -4,15 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/guy/CLionProjects/APMS2/CacheManager.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/CacheManager.cpp.o"
-  "/home/guy/CLionProjects/APMS2/ClientHandler.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
-  "/home/guy/CLionProjects/APMS2/FileCacheManager.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
-  "/home/guy/CLionProjects/APMS2/MySerialServer.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
-  "/home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
-  "/home/guy/CLionProjects/APMS2/Solver.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/Solver.cpp.o"
-  "/home/guy/CLionProjects/APMS2/StringReverser.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/StringReverser.cpp.o"
-  "/home/guy/CLionProjects/APMS2/boot_file.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/boot_file.cpp.o"
-  "/home/guy/CLionProjects/APMS2/server_file.cpp" "/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/server_file.cpp.o"
+  "/home/amittulman/Desktop/APMS2/CacheManager.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/CacheManager.cpp.o"
+  "/home/amittulman/Desktop/APMS2/ClientHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
+  "/home/amittulman/Desktop/APMS2/FileCacheManager.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
+  "/home/amittulman/Desktop/APMS2/MySerialServer.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
+  "/home/amittulman/Desktop/APMS2/MyTestClientHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
+  "/home/amittulman/Desktop/APMS2/Solver.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/Solver.cpp.o"
+  "/home/amittulman/Desktop/APMS2/StringReverser.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/StringReverser.cpp.o"
+  "/home/amittulman/Desktop/APMS2/boot_file.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/boot_file.cpp.o"
+  "/home/amittulman/Desktop/APMS2/main.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/main.cpp.o"
+  "/home/amittulman/Desktop/APMS2/server_file.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/server_file.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -16,11 +16,9 @@ using namespace std;
 
 template <class P,class S>
 class CacheManager {
-    virtual
-
 virtual bool isExist(P* problem) = 0; // What is the parameter???? @@@@@@@@@@@@@@@@@@@@@@@@@@
 virtual S returnSolution(P* problem) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@
-virtual bool saveSolution(P* problem, S* solution) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@@@
+virtual void saveSolution(P* problem, S* solution) = 0; // What is the return type and param?????? @@@@@@@@@@@@@@@@@@@@@@@@@@
 };
 
 /*

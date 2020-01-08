@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guy/CLionProjects/APMS2
+CMAKE_SOURCE_DIR = /home/amittulman/Desktop/APMS2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guy/CLionProjects/APMS2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/amittulman/Desktop/APMS2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/guy/CLionProjects/APMS2/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles /home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles /home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -339,6 +339,33 @@ boot_file.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.s
 .PHONY : boot_file.cpp.s
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 server_file.o: server_file.cpp.o
 
 .PHONY : server_file.o
@@ -399,6 +426,9 @@ help:
 	@echo "... boot_file.o"
 	@echo "... boot_file.i"
 	@echo "... boot_file.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... server_file.o"
 	@echo "... server_file.i"
 	@echo "... server_file.s"

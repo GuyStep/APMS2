@@ -14,7 +14,7 @@ class FileCacheManager : public CacheManager<P,S> {
 
  public:
     FileCacheManager()= default;
-  void saveSolution(P key, S solution) override{
+  void saveSolution(P* key, S* solution) override{
       myCache.insert(pair<P, bool>(key, true));
       writeToFile(key, solution);
   }
@@ -42,8 +42,8 @@ class FileCacheManager : public CacheManager<P,S> {
     return solution;
   }
 
-  S returnSolution(P key,S solution) override {
-    string file_name = key.class_name + key;
+  S returnSolution(P* key) override {
+    string file_name = (*key).class_name + key;
     bool flag = isExist(file_name);
     if (flag) {
       S object1 = readFromFile(key, object1);
@@ -53,8 +53,8 @@ class FileCacheManager : public CacheManager<P,S> {
     }
   }
 
-  bool isExist(string filename) override{
-    ifstream ifile(filename);
+  bool isExist(P* problem) override{
+    ifstream ifile(problem);
     return (bool)ifile;
   }
 
