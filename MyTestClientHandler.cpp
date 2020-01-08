@@ -19,9 +19,13 @@ void MyTestClientHandler::handleClient(int socket)  {
     int valread = read(socket, buffer, 2048);
     if (valread > 0 ) {
       for (int i =0 ; i < valread ; i++) {
-        if (buffer[i] != '\n') {
+        if ((buffer[i] != '\n') && (buffer[i] != '\r')) {
           question += buffer[i];
-        } else { //buffer[i] == \n
+          } else { //buffer[i] == \n
+           if (buffer[i] == '\r') {
+            i++;
+          }
+
           if (question.length() > 0) { //question != ""
             if (question.find("end") == 0 ) { //line from client = "end"
               close(socket);
@@ -37,8 +41,8 @@ void MyTestClientHandler::handleClient(int socket)  {
             if (is_sent < 0) {
               std::cout << "Error sending solution" << std::endl;
             }
-
             solution = "";
+            question = "";
           }
         }
       }

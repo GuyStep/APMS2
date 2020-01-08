@@ -21,6 +21,7 @@ CMakeFiles/APMS2.dir/MySerialServer.cpp.o: ../server_file.h
 
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../CacheManager.h
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../ClientHandler.h
+CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../FileCacheManager.h
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../Solver.h
