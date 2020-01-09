@@ -187,6 +187,84 @@ CMakeFiles/APMS2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/main.cpp -o CMakeFiles/APMS2.dir/main.cpp.s
 
+CMakeFiles/APMS2.dir/ISearcher.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../ISearcher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/APMS2.dir/ISearcher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/ISearcher.cpp.o -c /home/amittulman/Desktop/APMS2/ISearcher.cpp
+
+CMakeFiles/APMS2.dir/ISearcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/ISearcher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/ISearcher.cpp > CMakeFiles/APMS2.dir/ISearcher.cpp.i
+
+CMakeFiles/APMS2.dir/ISearcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/ISearcher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/ISearcher.cpp -o CMakeFiles/APMS2.dir/ISearcher.cpp.s
+
+CMakeFiles/APMS2.dir/State.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/State.cpp.o: ../State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/APMS2.dir/State.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/State.cpp.o -c /home/amittulman/Desktop/APMS2/State.cpp
+
+CMakeFiles/APMS2.dir/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/State.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/State.cpp > CMakeFiles/APMS2.dir/State.cpp.i
+
+CMakeFiles/APMS2.dir/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/State.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/State.cpp -o CMakeFiles/APMS2.dir/State.cpp.s
+
+CMakeFiles/APMS2.dir/Searcher.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/Searcher.cpp.o: ../Searcher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/APMS2.dir/Searcher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Searcher.cpp.o -c /home/amittulman/Desktop/APMS2/Searcher.cpp
+
+CMakeFiles/APMS2.dir/Searcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Searcher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/Searcher.cpp > CMakeFiles/APMS2.dir/Searcher.cpp.i
+
+CMakeFiles/APMS2.dir/Searcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Searcher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/Searcher.cpp -o CMakeFiles/APMS2.dir/Searcher.cpp.s
+
+CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o: ../BestFirstSeracher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o -c /home/amittulman/Desktop/APMS2/BestFirstSeracher.cpp
+
+CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/BestFirstSeracher.cpp > CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.i
+
+CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/BestFirstSeracher.cpp -o CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.s
+
+CMakeFiles/APMS2.dir/QueuePriority.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/QueuePriority.cpp.o: ../QueuePriority.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/APMS2.dir/QueuePriority.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/QueuePriority.cpp.o -c /home/amittulman/Desktop/APMS2/QueuePriority.cpp
+
+CMakeFiles/APMS2.dir/QueuePriority.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/QueuePriority.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/QueuePriority.cpp > CMakeFiles/APMS2.dir/QueuePriority.cpp.i
+
+CMakeFiles/APMS2.dir/QueuePriority.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/QueuePriority.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/QueuePriority.cpp -o CMakeFiles/APMS2.dir/QueuePriority.cpp.s
+
+CMakeFiles/APMS2.dir/Searchable.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/Searchable.cpp.o: ../Searchable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/APMS2.dir/Searchable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Searchable.cpp.o -c /home/amittulman/Desktop/APMS2/Searchable.cpp
+
+CMakeFiles/APMS2.dir/Searchable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Searchable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/Searchable.cpp > CMakeFiles/APMS2.dir/Searchable.cpp.i
+
+CMakeFiles/APMS2.dir/Searchable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Searchable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/Searchable.cpp -o CMakeFiles/APMS2.dir/Searchable.cpp.s
+
 # Object files for target APMS2
 APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/MySerialServer.cpp.o" \
@@ -198,7 +276,13 @@ APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/Solver.cpp.o" \
 "CMakeFiles/APMS2.dir/StringReverser.cpp.o" \
 "CMakeFiles/APMS2.dir/boot_file.cpp.o" \
-"CMakeFiles/APMS2.dir/main.cpp.o"
+"CMakeFiles/APMS2.dir/main.cpp.o" \
+"CMakeFiles/APMS2.dir/ISearcher.cpp.o" \
+"CMakeFiles/APMS2.dir/State.cpp.o" \
+"CMakeFiles/APMS2.dir/Searcher.cpp.o" \
+"CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o" \
+"CMakeFiles/APMS2.dir/QueuePriority.cpp.o" \
+"CMakeFiles/APMS2.dir/Searchable.cpp.o"
 
 # External object files for target APMS2
 APMS2_EXTERNAL_OBJECTS =
@@ -213,9 +297,15 @@ APMS2: CMakeFiles/APMS2.dir/Solver.cpp.o
 APMS2: CMakeFiles/APMS2.dir/StringReverser.cpp.o
 APMS2: CMakeFiles/APMS2.dir/boot_file.cpp.o
 APMS2: CMakeFiles/APMS2.dir/main.cpp.o
+APMS2: CMakeFiles/APMS2.dir/ISearcher.cpp.o
+APMS2: CMakeFiles/APMS2.dir/State.cpp.o
+APMS2: CMakeFiles/APMS2.dir/Searcher.cpp.o
+APMS2: CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o
+APMS2: CMakeFiles/APMS2.dir/QueuePriority.cpp.o
+APMS2: CMakeFiles/APMS2.dir/Searchable.cpp.o
 APMS2: CMakeFiles/APMS2.dir/build.make
 APMS2: CMakeFiles/APMS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable APMS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable APMS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/APMS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

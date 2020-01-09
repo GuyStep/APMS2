@@ -123,6 +123,33 @@ APMS2/fast:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/build
 .PHONY : APMS2/fast
 
+BestFirstSeracher.o: BestFirstSeracher.cpp.o
+
+.PHONY : BestFirstSeracher.o
+
+# target to build an object file
+BestFirstSeracher.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o
+.PHONY : BestFirstSeracher.cpp.o
+
+BestFirstSeracher.i: BestFirstSeracher.cpp.i
+
+.PHONY : BestFirstSeracher.i
+
+# target to preprocess a source file
+BestFirstSeracher.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.i
+.PHONY : BestFirstSeracher.cpp.i
+
+BestFirstSeracher.s: BestFirstSeracher.cpp.s
+
+.PHONY : BestFirstSeracher.s
+
+# target to generate assembly for a file
+BestFirstSeracher.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.s
+.PHONY : BestFirstSeracher.cpp.s
+
 CacheManager.o: CacheManager.cpp.o
 
 .PHONY : CacheManager.o
@@ -285,6 +312,87 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
+QueuePriority.o: QueuePriority.cpp.o
+
+.PHONY : QueuePriority.o
+
+# target to build an object file
+QueuePriority.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/QueuePriority.cpp.o
+.PHONY : QueuePriority.cpp.o
+
+QueuePriority.i: QueuePriority.cpp.i
+
+.PHONY : QueuePriority.i
+
+# target to preprocess a source file
+QueuePriority.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/QueuePriority.cpp.i
+.PHONY : QueuePriority.cpp.i
+
+QueuePriority.s: QueuePriority.cpp.s
+
+.PHONY : QueuePriority.s
+
+# target to generate assembly for a file
+QueuePriority.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/QueuePriority.cpp.s
+.PHONY : QueuePriority.cpp.s
+
+Searchable.o: Searchable.cpp.o
+
+.PHONY : Searchable.o
+
+# target to build an object file
+Searchable.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.o
+.PHONY : Searchable.cpp.o
+
+Searchable.i: Searchable.cpp.i
+
+.PHONY : Searchable.i
+
+# target to preprocess a source file
+Searchable.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.i
+.PHONY : Searchable.cpp.i
+
+Searchable.s: Searchable.cpp.s
+
+.PHONY : Searchable.s
+
+# target to generate assembly for a file
+Searchable.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.s
+.PHONY : Searchable.cpp.s
+
+Searcher.o: Searcher.cpp.o
+
+.PHONY : Searcher.o
+
+# target to build an object file
+Searcher.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searcher.cpp.o
+.PHONY : Searcher.cpp.o
+
+Searcher.i: Searcher.cpp.i
+
+.PHONY : Searcher.i
+
+# target to preprocess a source file
+Searcher.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searcher.cpp.i
+.PHONY : Searcher.cpp.i
+
+Searcher.s: Searcher.cpp.s
+
+.PHONY : Searcher.s
+
+# target to generate assembly for a file
+Searcher.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searcher.cpp.s
+.PHONY : Searcher.cpp.s
+
 Solver.o: Solver.cpp.o
 
 .PHONY : Solver.o
@@ -311,6 +419,33 @@ Solver.s: Solver.cpp.s
 Solver.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.s
 .PHONY : Solver.cpp.s
+
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/State.cpp.s
+.PHONY : State.cpp.s
 
 StringReverser.o: StringReverser.cpp.o
 
@@ -429,6 +564,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... APMS2"
 	@echo "... edit_cache"
+	@echo "... BestFirstSeracher.o"
+	@echo "... BestFirstSeracher.i"
+	@echo "... BestFirstSeracher.s"
 	@echo "... CacheManager.o"
 	@echo "... CacheManager.i"
 	@echo "... CacheManager.s"
@@ -447,9 +585,21 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
+	@echo "... QueuePriority.o"
+	@echo "... QueuePriority.i"
+	@echo "... QueuePriority.s"
+	@echo "... Searchable.o"
+	@echo "... Searchable.i"
+	@echo "... Searchable.s"
+	@echo "... Searcher.o"
+	@echo "... Searcher.i"
+	@echo "... Searcher.s"
 	@echo "... Solver.o"
 	@echo "... Solver.i"
 	@echo "... Solver.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
