@@ -104,6 +104,12 @@
 		<Unit filename="/home/amittulman/Desktop/APMS2/FileCacheManager.h">
 			<Option target="APMS2"/>
 		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/ISearcher.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/ISearcher.h">
+			<Option target="APMS2"/>
+		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/MySerialServer.cpp">
 			<Option target="APMS2"/>
 		</Unit>

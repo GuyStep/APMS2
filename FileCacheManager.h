@@ -45,7 +45,8 @@ class FileCacheManager : public CacheManager {
     string file_name = key;
     bool flag = isExist(file_name);
     if (flag) {
-      string object1 = readFromFile(key, object1);
+      string object1;
+      object1 = readFromFile(key, object1);
       return object1;
     } else {
       throw ("file doesnt exist");
@@ -53,8 +54,9 @@ class FileCacheManager : public CacheManager {
   }
 
   bool isExist(string problem) override{
-    ifstream ifile(problem);
-    return (bool)ifile;
+    return this->myCache.count(problem) != 0;
+/*    ifstream ifile(problem);
+    return (bool)ifile;*/
   }
 
 };

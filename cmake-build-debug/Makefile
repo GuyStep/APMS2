@@ -204,6 +204,33 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
+ISearcher.o: ISearcher.cpp.o
+
+.PHONY : ISearcher.o
+
+# target to build an object file
+ISearcher.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.o
+.PHONY : ISearcher.cpp.o
+
+ISearcher.i: ISearcher.cpp.i
+
+.PHONY : ISearcher.i
+
+# target to preprocess a source file
+ISearcher.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.i
+.PHONY : ISearcher.cpp.i
+
+ISearcher.s: ISearcher.cpp.s
+
+.PHONY : ISearcher.s
+
+# target to generate assembly for a file
+ISearcher.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.s
+.PHONY : ISearcher.cpp.s
+
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -411,6 +438,9 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... ISearcher.o"
+	@echo "... ISearcher.i"
+	@echo "... ISearcher.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
