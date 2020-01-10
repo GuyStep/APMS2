@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/APMS2.dir/QueuePriority.cpp.o"
   "CMakeFiles/APMS2.dir/Searchable.cpp.o"
+  "CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o"
   "CMakeFiles/APMS2.dir/Searcher.cpp.o"
   "CMakeFiles/APMS2.dir/Solver.cpp.o"
   "CMakeFiles/APMS2.dir/State.cpp.o"

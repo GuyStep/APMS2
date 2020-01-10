@@ -13,6 +13,7 @@ class DataManager {
   vector<State<T>*> close;
   virtual State<T>* pop() =0;
   virtual State<T>* empty() =0;
+  virtual bool stateExsist(State<T>* s) = 0;
   virtual State<T>* emptyClose(){
     return close.empty();
   }

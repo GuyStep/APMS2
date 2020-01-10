@@ -366,6 +366,33 @@ Searchable.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.s
 .PHONY : Searchable.cpp.s
 
+SearchableforMatrix.o: SearchableforMatrix.cpp.o
+
+.PHONY : SearchableforMatrix.o
+
+# target to build an object file
+SearchableforMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o
+.PHONY : SearchableforMatrix.cpp.o
+
+SearchableforMatrix.i: SearchableforMatrix.cpp.i
+
+.PHONY : SearchableforMatrix.i
+
+# target to preprocess a source file
+SearchableforMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.i
+.PHONY : SearchableforMatrix.cpp.i
+
+SearchableforMatrix.s: SearchableforMatrix.cpp.s
+
+.PHONY : SearchableforMatrix.s
+
+# target to generate assembly for a file
+SearchableforMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.s
+.PHONY : SearchableforMatrix.cpp.s
+
 Searcher.o: Searcher.cpp.o
 
 .PHONY : Searcher.o
@@ -591,6 +618,9 @@ help:
 	@echo "... Searchable.o"
 	@echo "... Searchable.i"
 	@echo "... Searchable.s"
+	@echo "... SearchableforMatrix.o"
+	@echo "... SearchableforMatrix.i"
+	@echo "... SearchableforMatrix.s"
 	@echo "... Searcher.o"
 	@echo "... Searcher.i"
 	@echo "... Searcher.s"

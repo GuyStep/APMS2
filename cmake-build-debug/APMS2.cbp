@@ -146,6 +146,12 @@
 		<Unit filename="/home/amittulman/Desktop/APMS2/Searchable.h">
 			<Option target="APMS2"/>
 		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/SearchableforMatrix.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/SearchableforMatrix.h">
+			<Option target="APMS2"/>
+		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/Searcher.cpp">
 			<Option target="APMS2"/>
 		</Unit>
