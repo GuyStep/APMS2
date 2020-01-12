@@ -52,14 +52,4 @@ void MyTestClientHandler::handleClient(int socket)  {
     }
   }
 
-/*  bool exist = this->cache_manager.isExist(p);
-  if (exist) {
-        s = this->cache_manager.returnSolution(p);
-        return s;
-  }
-  else{
-        s = this->solver.solve(p);
-        this->cache_manager.saveSolution(p,s);
-        return s;
-  }*/
 }

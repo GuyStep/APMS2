@@ -4,11 +4,10 @@
 
 #ifndef APMS2_SOLVER_H
 #define APMS2_SOLVER_H
-
 template<class P, class S>
 class Solver {
  public:
-    virtual S solve(P key) = 0;
+  virtual S solve(P key) = 0;
 };
 
 
