@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amittulman/Desktop/APMS2/ClientHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
   "/home/amittulman/Desktop/APMS2/FileCacheManager.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
   "/home/amittulman/Desktop/APMS2/ISearcher.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/ISearcher.cpp.o"
+  "/home/amittulman/Desktop/APMS2/MatrixHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"
   "/home/amittulman/Desktop/APMS2/MySerialServer.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
   "/home/amittulman/Desktop/APMS2/MyTestClientHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
   "/home/amittulman/Desktop/APMS2/QueuePriority.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/QueuePriority.cpp.o"
@@ -20,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amittulman/Desktop/APMS2/StringReverser.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/StringReverser.cpp.o"
   "/home/amittulman/Desktop/APMS2/boot_file.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/boot_file.cpp.o"
   "/home/amittulman/Desktop/APMS2/main.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/main.cpp.o"
+  "/home/amittulman/Desktop/APMS2/mtxSolver.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/mtxSolver.cpp.o"
   "/home/amittulman/Desktop/APMS2/server_file.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/server_file.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

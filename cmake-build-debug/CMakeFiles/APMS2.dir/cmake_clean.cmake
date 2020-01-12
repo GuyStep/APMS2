@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
   "CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/APMS2.dir/ISearcher.cpp.o"
+  "CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"
   "CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
   "CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/APMS2.dir/QueuePriority.cpp.o"
@@ -17,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/APMS2.dir/StringReverser.cpp.o"
   "CMakeFiles/APMS2.dir/boot_file.cpp.o"
   "CMakeFiles/APMS2.dir/main.cpp.o"
+  "CMakeFiles/APMS2.dir/mtxSolver.cpp.o"
   "CMakeFiles/APMS2.dir/server_file.cpp.o"
 )
 

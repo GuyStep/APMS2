@@ -122,6 +122,12 @@
 		<Unit filename="/home/amittulman/Desktop/APMS2/ISearcher.h">
 			<Option target="APMS2"/>
 		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/MatrixHandler.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/MatrixHandler.h">
+			<Option target="APMS2"/>
+		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/MySerialServer.cpp">
 			<Option target="APMS2"/>
 		</Unit>
@@ -183,6 +189,12 @@
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/main.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/mtxSolver.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/mtxSolver.h">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/server_file.cpp">

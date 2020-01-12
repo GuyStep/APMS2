@@ -31,7 +31,6 @@ class Searcher : public ISearcher<T, vector<State<T>*>>{
       }
     }
   }
-
 };
 
 #endif //APMS2__SEARCHER_H_

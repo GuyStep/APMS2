@@ -258,6 +258,33 @@ ISearcher.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.s
 .PHONY : ISearcher.cpp.s
 
+MatrixHandler.o: MatrixHandler.cpp.o
+
+.PHONY : MatrixHandler.o
+
+# target to build an object file
+MatrixHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MatrixHandler.cpp.o
+.PHONY : MatrixHandler.cpp.o
+
+MatrixHandler.i: MatrixHandler.cpp.i
+
+.PHONY : MatrixHandler.i
+
+# target to preprocess a source file
+MatrixHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MatrixHandler.cpp.i
+.PHONY : MatrixHandler.cpp.i
+
+MatrixHandler.s: MatrixHandler.cpp.s
+
+.PHONY : MatrixHandler.s
+
+# target to generate assembly for a file
+MatrixHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MatrixHandler.cpp.s
+.PHONY : MatrixHandler.cpp.s
+
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -555,6 +582,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mtxSolver.o: mtxSolver.cpp.o
+
+.PHONY : mtxSolver.o
+
+# target to build an object file
+mtxSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/mtxSolver.cpp.o
+.PHONY : mtxSolver.cpp.o
+
+mtxSolver.i: mtxSolver.cpp.i
+
+.PHONY : mtxSolver.i
+
+# target to preprocess a source file
+mtxSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/mtxSolver.cpp.i
+.PHONY : mtxSolver.cpp.i
+
+mtxSolver.s: mtxSolver.cpp.s
+
+.PHONY : mtxSolver.s
+
+# target to generate assembly for a file
+mtxSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/mtxSolver.cpp.s
+.PHONY : mtxSolver.cpp.s
+
 server_file.o: server_file.cpp.o
 
 .PHONY : server_file.o
@@ -606,6 +660,9 @@ help:
 	@echo "... ISearcher.o"
 	@echo "... ISearcher.i"
 	@echo "... ISearcher.s"
+	@echo "... MatrixHandler.o"
+	@echo "... MatrixHandler.i"
+	@echo "... MatrixHandler.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
@@ -639,6 +696,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mtxSolver.o"
+	@echo "... mtxSolver.i"
+	@echo "... mtxSolver.s"
 	@echo "... server_file.o"
 	@echo "... server_file.i"
 	@echo "... server_file.s"

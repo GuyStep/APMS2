@@ -26,6 +26,12 @@ CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../ISearcher.h
 CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../Searchable.h
 CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../State.h
 
+CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: ../CacheManager.h
+CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: ../ClientHandler.h
+CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: ../MatrixHandler.cpp
+CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: ../MatrixHandler.h
+CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: ../Solver.h
+
 CMakeFiles/APMS2.dir/MySerialServer.cpp.o: ../CacheManager.h
 CMakeFiles/APMS2.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/APMS2.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
@@ -49,6 +55,11 @@ CMakeFiles/APMS2.dir/QueuePriority.cpp.o: ../State.h
 CMakeFiles/APMS2.dir/Searchable.cpp.o: ../Searchable.cpp
 CMakeFiles/APMS2.dir/Searchable.cpp.o: ../Searchable.h
 CMakeFiles/APMS2.dir/Searchable.cpp.o: ../State.h
+
+CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../Searchable.h
+CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../SearchableforMatrix.cpp
+CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../SearchableforMatrix.h
+CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../State.h
 
 CMakeFiles/APMS2.dir/Searcher.cpp.o: ../DataManager.h
 CMakeFiles/APMS2.dir/Searcher.cpp.o: ../ISearcher.h

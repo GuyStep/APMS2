@@ -11,8 +11,8 @@
 #include "AlgoQueue.h"
 using namespace std;
 template <class T>
-class BestFirstSeracher : Searcher<T>{
- private:
+class BestFirstSeracher : public Searcher<T>{
+ protected:
    QueuePriority<T> openQ;
  public:
   vector<State<T>*> search(Searchable<T>* searchable) {
