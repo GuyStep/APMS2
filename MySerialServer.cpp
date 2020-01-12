@@ -56,6 +56,8 @@ void start(int serverSocket,sockaddr_in address,ClientHandler* handler) {
       std::cerr << "SERVER : Error accepting client" << std::endl;
       return;
     }
+    std::cerr << "SERVER : client connected" << std::endl;
+
     handler->handleClient(clientSocket);
 
   }

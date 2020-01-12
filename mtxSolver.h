@@ -47,11 +47,13 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
       if (!endFlag) {
         path += ",";
       }
-    }
-    // delete (answer[i+1]);
+      // delete (answer[i+1]);
 /*    delete (searcher);
     delete (searchable);*/
+    }
+    return path;
   }
 };
 }
+
 #endif //APMS2__MTXSOLVER_H_

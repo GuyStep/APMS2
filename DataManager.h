@@ -12,13 +12,16 @@ class DataManager {
  public:
   vector<State<T>*> close;
   virtual State<T>* pop() =0;
-  virtual State<T>* empty() =0;
+  virtual State<T>* top() =0;
+  virtual int size() =0;
+
+  virtual bool empty() =0;
   virtual bool stateExsist(State<T>* s) = 0;
-  virtual State<T>* emptyClose(){
+  virtual bool emptyClose(){
     return close.empty();
   }
 
-  virtual State<T>* push(State<T>* s) =0;
+  virtual void push(State<T>* s) =0;
   virtual State<T>* popClose() {
     State<T>* top = close.back();
     close.pop_back();
@@ -28,7 +31,12 @@ class DataManager {
     close.push_back(temp);
   }
   virtual bool existClose(State<T>* temp) {
-    return find(close.begin(), close.end(), temp) != close.end();
+    for (int i = 0; i< close.size(); i++) {
+      if (*close[i] == *temp) {
+        return true;
+      }
+    }
+    return false;
   }
 };
 

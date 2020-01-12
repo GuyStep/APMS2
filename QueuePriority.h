@@ -21,7 +21,7 @@ class StateComperatorByCost {
 template <class T>
 class QueuePriority : public DataManager<T>{
  private:
-  priority_queue<State<T>*> myQ;
+  priority_queue<State<T>*,vector<State<T>*>, StateComperatorByCost<T>> myQ;
  public:
   void push(State<T>* temp) override {
     myQ.push(temp);
@@ -30,9 +30,9 @@ class QueuePriority : public DataManager<T>{
     return myQ.top();
   }
   State<T>* pop() override {
-    State<T>* top = top();
+    State<T>* top1 = top();
     myQ.pop();
-    return top;
+    return top1;
   }
   bool empty() override {
     return myQ.empty();

@@ -9,51 +9,53 @@
 #include <sys/socket.h>
 #include <iostream>
 #include <unistd.h>
-MatrixHandler::MatrixHandler(Solver<string, vector<vector<double>>> *solver, CacheManager *cache)
-    : solver(solver), cache(cache) {}
 void MatrixHandler::handleClient(int sock) {
   vector<vector<double>> mtx;
   string question = "";
   string solution;
   string line ="";
+  bool endFlag = true;
   //reading from client
-  while (1) {
+  while (endFlag) {
     char buffer[2048] = {0};
     int valread = read(sock, buffer, 2048);
     if (valread > 0) {
       for (int i = 0; i < valread; i++) {
-        if ((buffer[i] != '\n') && (buffer[i] != '\r')) {
-          question += buffer[i];
-        } else { //buffer[i] == \n
-          if (buffer[i] == '\r') {
-            i++;
-          }
-          if (question.length() > 0) { //question != ""
-            if (question.find("end") == 0) { //line from client = "end"
-              close(sock);
-              return;
+        line += buffer[i];
+        if (line.length() > 0) { //question != ""
+          int findEnd = line.find("end");
+          if (findEnd >= 0) { //line from client = "end"
+            if(findEnd > 0) { //36.36end
+              string sub = line.substr(0,findEnd);
+              mtx.push_back(split(sub));
+              question += sub + "\n";
             }
-            mtx.push_back(split(line));
-            question += line + "\n";
-            line = "";
-
+            endFlag = false;
+            break;
           }
         }
       }
+      if (endFlag) {
+        mtx.push_back(split(line));
+        question += line + "\n";
+        line = "";
+      }
+
     } else { //no bytes read
       close(sock);
       return;
     }
-
+  }
     //--------------valid mtx?? ---------------------------
 
     if (this->cache->isExist(question)) { //exists in the cache
       solution = this->cache->returnSolution(question);
     } else {
-      solution = this->solver->solve(question);
+      solution = this->solver->solve(mtx);
       this->cache->saveSolution(question, solution);
     }
-    int is_sent = send(socket, (solution+'\n').c_str(), solution.length()+1, 0);
+    solution = solution + '\n';
+    int is_sent = send(sock, solution.c_str(), solution.length(), 0);
     if (is_sent < 0) {
       std::cout << "Error sending solution" << std::endl;
     }
@@ -61,7 +63,7 @@ void MatrixHandler::handleClient(int sock) {
     question = "";
     close(sock);
   }
-}
+
 vector<double> MatrixHandler::split(string row) {
   vector<double> result;
   stringstream ss(row);
@@ -69,6 +71,7 @@ vector<double> MatrixHandler::split(string row) {
   {
     string substr;
     getline( ss, substr, ',' );
+    cout<<substr<<endl;
     result.push_back(stod(substr));
   }
   return result;

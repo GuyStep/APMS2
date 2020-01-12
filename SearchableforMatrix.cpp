@@ -26,7 +26,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
   int curRow = state->getState().first;
   int curCol = state->getState().second;
 
-  if(curRow + 1 <= rows) { //down neighbor
+  if(curRow + 1 < rows) { //down neighbor
     pair<int,int> downPair;
     downPair.first = curRow+1;
     downPair.second = curCol;
@@ -40,7 +40,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
     State<pair<int,int>>* upState = new State<pair<int,int>>(upPair, this->mtx[curRow-1][curCol], state);
     neighbors.push_back(upState);
   }
-  if(curCol + 1 <= columns) { //right neighbor
+  if(curCol + 1 < columns) { //right neighbor
     pair<int,int> rightPair;
     rightPair.first = curRow;
     rightPair.second = curCol + 1;
@@ -55,5 +55,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
     State<pair<int,int>>* downState = new State<pair<int,int>>(leftPair, this->mtx[curRow][curCol - 1], state);
     neighbors.push_back(downState);
   }
+    int j;
+  return neighbors;
 }
 

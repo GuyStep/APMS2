@@ -24,6 +24,7 @@ class BestFirstSeracher : public Searcher<T>{
     while(!openQ.empty()) { //iterate over the problems by bfs
       this->increaseSolutionSize();
       curState = openQ.pop();
+      openQ.pushClose(curState);
       if(*curState == *goal) { //check if finished
         vector<State<T>*> path = this->backTrace(start,curState);
         this->deleteRedundency(path,&openQ);
@@ -32,7 +33,9 @@ class BestFirstSeracher : public Searcher<T>{
       vector<State<T>*> adj = searchable->getadjStates(curState); //get neighbors
       int sizeadj = adj.size();
       for (int i = 0; i < sizeadj; i++) {
-        if(!openQ.stateExsist(adj[i]) && !openQ.existClose(adj[i])) {
+        bool first = openQ.stateExsist(adj[i]);
+        bool second = openQ.existClose(adj[i]);
+        if(!first && !second) {
           openQ.push(adj[i]);
         } else if (!openQ.existClose(adj[i])) {
           State<T> *comparable = openQ.find(adj[i]);

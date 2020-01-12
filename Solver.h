@@ -4,7 +4,7 @@
 
 #ifndef APMS2_SOLVER_H
 #define APMS2_SOLVER_H
-template<class P, class S>
+template<class S,class P>
 class Solver {
  public:
   virtual S solve(P key) = 0;

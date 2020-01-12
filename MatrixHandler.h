@@ -17,7 +17,10 @@ class MatrixHandler : public ClientHandler{
   Solver<string,vector<vector<double>>>* solver;
   CacheManager* cache;
  public:
-  MatrixHandler(Solver<string, vector<vector<double>>> *solver, CacheManager *cache);
+  MatrixHandler(Solver<string, vector<vector<double>>> *solver, CacheManager *cache) {
+    this->solver = solver;
+    this->cache = cache;
+  }
   void handleClient(int sock) override;
   vector<double> split(string row);
 };

@@ -13,7 +13,20 @@ template <class T>
 class Searcher : public ISearcher<T, vector<State<T>*>>{
  public:
   vector<State<T>*> backTrace(State<T>* start,State<T>* goal) {
-   //return NULL;
+   vector<State<T>*> path;
+   vector<State<T>*> result;
+    State<T>* cur = goal;
+
+    while(!(*cur == *start)) {
+      path.push_back(cur);
+      cur = cur->getPrev();
+    }
+    path.push_back(start);
+    unsigned long i = path.size();
+    for(i; i>0 ;i--) {
+      result.push_back(path[i-1]);
+    }
+    return result;
   }
   void deleteRedundency(vector<State<T>*> path, DataManager<T>* data) {
     State<T>* currState;

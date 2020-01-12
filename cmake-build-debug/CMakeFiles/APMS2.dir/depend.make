@@ -89,15 +89,39 @@ CMakeFiles/APMS2.dir/boot_file.cpp.o: ../boot_file.cpp
 CMakeFiles/APMS2.dir/boot_file.cpp.o: ../boot_file.h
 CMakeFiles/APMS2.dir/boot_file.cpp.o: ../server_file.h
 
+CMakeFiles/APMS2.dir/main.cpp.o: ../AlgoQueue.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../BestFirstSeracher.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../CacheManager.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../ClientHandler.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../DataManager.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../FileCacheManager.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../ISearcher.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../MatrixHandler.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../MyTestClientHandler.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../QueuePriority.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../Searchable.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../SearchableforMatrix.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../Solver.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../State.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../StringReverser.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../main.cpp
+CMakeFiles/APMS2.dir/main.cpp.o: ../mtxSolver.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../server_file.h
+
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../AlgoQueue.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../BestFirstSeracher.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../DataManager.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../ISearcher.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../QueuePriority.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../Searchable.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../SearchableforMatrix.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../Searcher.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../Solver.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../State.h
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../mtxSolver.cpp
+CMakeFiles/APMS2.dir/mtxSolver.cpp.o: ../mtxSolver.h
 
 CMakeFiles/APMS2.dir/server_file.cpp.o: ../ClientHandler.h
 CMakeFiles/APMS2.dir/server_file.cpp.o: ../server_file.cpp
