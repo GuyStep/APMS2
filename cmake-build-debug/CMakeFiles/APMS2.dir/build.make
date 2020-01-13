@@ -304,6 +304,45 @@ CMakeFiles/APMS2.dir/mtxSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/mtxSolver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/mtxSolver.cpp -o CMakeFiles/APMS2.dir/mtxSolver.cpp.s
 
+CMakeFiles/APMS2.dir/Bfs.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/Bfs.cpp.o: ../Bfs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/APMS2.dir/Bfs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Bfs.cpp.o -c /home/amittulman/Desktop/APMS2/Bfs.cpp
+
+CMakeFiles/APMS2.dir/Bfs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Bfs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/Bfs.cpp > CMakeFiles/APMS2.dir/Bfs.cpp.i
+
+CMakeFiles/APMS2.dir/Bfs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Bfs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/Bfs.cpp -o CMakeFiles/APMS2.dir/Bfs.cpp.s
+
+CMakeFiles/APMS2.dir/Dfs.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/Dfs.cpp.o: ../Dfs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/APMS2.dir/Dfs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Dfs.cpp.o -c /home/amittulman/Desktop/APMS2/Dfs.cpp
+
+CMakeFiles/APMS2.dir/Dfs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Dfs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/Dfs.cpp > CMakeFiles/APMS2.dir/Dfs.cpp.i
+
+CMakeFiles/APMS2.dir/Dfs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Dfs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/Dfs.cpp -o CMakeFiles/APMS2.dir/Dfs.cpp.s
+
+CMakeFiles/APMS2.dir/AlgoStack.cpp.o: CMakeFiles/APMS2.dir/flags.make
+CMakeFiles/APMS2.dir/AlgoStack.cpp.o: ../AlgoStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/AlgoStack.cpp.o -c /home/amittulman/Desktop/APMS2/AlgoStack.cpp
+
+CMakeFiles/APMS2.dir/AlgoStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/AlgoStack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amittulman/Desktop/APMS2/AlgoStack.cpp > CMakeFiles/APMS2.dir/AlgoStack.cpp.i
+
+CMakeFiles/APMS2.dir/AlgoStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/AlgoStack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amittulman/Desktop/APMS2/AlgoStack.cpp -o CMakeFiles/APMS2.dir/AlgoStack.cpp.s
+
 # Object files for target APMS2
 APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/MySerialServer.cpp.o" \
@@ -324,7 +363,10 @@ APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/Searchable.cpp.o" \
 "CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o" \
 "CMakeFiles/APMS2.dir/MatrixHandler.cpp.o" \
-"CMakeFiles/APMS2.dir/mtxSolver.cpp.o"
+"CMakeFiles/APMS2.dir/mtxSolver.cpp.o" \
+"CMakeFiles/APMS2.dir/Bfs.cpp.o" \
+"CMakeFiles/APMS2.dir/Dfs.cpp.o" \
+"CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
 
 # External object files for target APMS2
 APMS2_EXTERNAL_OBJECTS =
@@ -348,9 +390,12 @@ APMS2: CMakeFiles/APMS2.dir/Searchable.cpp.o
 APMS2: CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o
 APMS2: CMakeFiles/APMS2.dir/MatrixHandler.cpp.o
 APMS2: CMakeFiles/APMS2.dir/mtxSolver.cpp.o
+APMS2: CMakeFiles/APMS2.dir/Bfs.cpp.o
+APMS2: CMakeFiles/APMS2.dir/Dfs.cpp.o
+APMS2: CMakeFiles/APMS2.dir/AlgoStack.cpp.o
 APMS2: CMakeFiles/APMS2.dir/build.make
 APMS2: CMakeFiles/APMS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable APMS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable APMS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/APMS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

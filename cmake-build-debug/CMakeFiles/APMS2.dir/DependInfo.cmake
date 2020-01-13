@@ -4,9 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/amittulman/Desktop/APMS2/AlgoStack.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
   "/home/amittulman/Desktop/APMS2/BestFirstSeracher.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o"
+  "/home/amittulman/Desktop/APMS2/Bfs.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/Bfs.cpp.o"
   "/home/amittulman/Desktop/APMS2/CacheManager.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/CacheManager.cpp.o"
   "/home/amittulman/Desktop/APMS2/ClientHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
+  "/home/amittulman/Desktop/APMS2/Dfs.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/Dfs.cpp.o"
   "/home/amittulman/Desktop/APMS2/FileCacheManager.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
   "/home/amittulman/Desktop/APMS2/ISearcher.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/ISearcher.cpp.o"
   "/home/amittulman/Desktop/APMS2/MatrixHandler.cpp" "/home/amittulman/Desktop/APMS2/cmake-build-debug/CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"

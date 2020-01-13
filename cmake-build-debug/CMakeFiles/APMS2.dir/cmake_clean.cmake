@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
   "APMS2"
   "APMS2.pdb"
+  "CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
   "CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o"
+  "CMakeFiles/APMS2.dir/Bfs.cpp.o"
   "CMakeFiles/APMS2.dir/CacheManager.cpp.o"
   "CMakeFiles/APMS2.dir/ClientHandler.cpp.o"
+  "CMakeFiles/APMS2.dir/Dfs.cpp.o"
   "CMakeFiles/APMS2.dir/FileCacheManager.cpp.o"
   "CMakeFiles/APMS2.dir/ISearcher.cpp.o"
   "CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"

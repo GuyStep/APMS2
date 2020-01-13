@@ -123,6 +123,33 @@ APMS2/fast:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/build
 .PHONY : APMS2/fast
 
+AlgoStack.o: AlgoStack.cpp.o
+
+.PHONY : AlgoStack.o
+
+# target to build an object file
+AlgoStack.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AlgoStack.cpp.o
+.PHONY : AlgoStack.cpp.o
+
+AlgoStack.i: AlgoStack.cpp.i
+
+.PHONY : AlgoStack.i
+
+# target to preprocess a source file
+AlgoStack.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AlgoStack.cpp.i
+.PHONY : AlgoStack.cpp.i
+
+AlgoStack.s: AlgoStack.cpp.s
+
+.PHONY : AlgoStack.s
+
+# target to generate assembly for a file
+AlgoStack.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AlgoStack.cpp.s
+.PHONY : AlgoStack.cpp.s
+
 BestFirstSeracher.o: BestFirstSeracher.cpp.o
 
 .PHONY : BestFirstSeracher.o
@@ -149,6 +176,33 @@ BestFirstSeracher.s: BestFirstSeracher.cpp.s
 BestFirstSeracher.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.s
 .PHONY : BestFirstSeracher.cpp.s
+
+Bfs.o: Bfs.cpp.o
+
+.PHONY : Bfs.o
+
+# target to build an object file
+Bfs.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Bfs.cpp.o
+.PHONY : Bfs.cpp.o
+
+Bfs.i: Bfs.cpp.i
+
+.PHONY : Bfs.i
+
+# target to preprocess a source file
+Bfs.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Bfs.cpp.i
+.PHONY : Bfs.cpp.i
+
+Bfs.s: Bfs.cpp.s
+
+.PHONY : Bfs.s
+
+# target to generate assembly for a file
+Bfs.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Bfs.cpp.s
+.PHONY : Bfs.cpp.s
 
 CacheManager.o: CacheManager.cpp.o
 
@@ -203,6 +257,33 @@ ClientHandler.s: ClientHandler.cpp.s
 ClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.s
 .PHONY : ClientHandler.cpp.s
+
+Dfs.o: Dfs.cpp.o
+
+.PHONY : Dfs.o
+
+# target to build an object file
+Dfs.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Dfs.cpp.o
+.PHONY : Dfs.cpp.o
+
+Dfs.i: Dfs.cpp.i
+
+.PHONY : Dfs.i
+
+# target to preprocess a source file
+Dfs.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Dfs.cpp.i
+.PHONY : Dfs.cpp.i
+
+Dfs.s: Dfs.cpp.s
+
+.PHONY : Dfs.s
+
+# target to generate assembly for a file
+Dfs.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Dfs.cpp.s
+.PHONY : Dfs.cpp.s
 
 FileCacheManager.o: FileCacheManager.cpp.o
 
@@ -645,15 +726,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... APMS2"
 	@echo "... edit_cache"
+	@echo "... AlgoStack.o"
+	@echo "... AlgoStack.i"
+	@echo "... AlgoStack.s"
 	@echo "... BestFirstSeracher.o"
 	@echo "... BestFirstSeracher.i"
 	@echo "... BestFirstSeracher.s"
+	@echo "... Bfs.o"
+	@echo "... Bfs.i"
+	@echo "... Bfs.s"
 	@echo "... CacheManager.o"
 	@echo "... CacheManager.i"
 	@echo "... CacheManager.s"
 	@echo "... ClientHandler.o"
 	@echo "... ClientHandler.i"
 	@echo "... ClientHandler.s"
+	@echo "... Dfs.o"
+	@echo "... Dfs.i"
+	@echo "... Dfs.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"

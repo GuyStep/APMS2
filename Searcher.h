@@ -33,10 +33,9 @@ class Searcher : public ISearcher<T, vector<State<T>*>>{
     while(!data->empty()) { // Q open not empty
         delete(data->pop());
     }
-    while(!data->emptyClose()) {//closed not empty
+    while(!data->emptyClose()) { //closed not empty
       currState = data->popClose();
       int size = path.size();
-
       if(find(path.begin(), path.end(), currState) != path.end()){
         continue;
       } else {

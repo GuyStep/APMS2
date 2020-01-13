@@ -13,6 +13,10 @@
 //#include "Searcher.h"
 #include "SearchableforMatrix.h"
 #include "BestFirstSeracher.h"
+#include "Bfs.h"
+#include "Dfs.h"
+
+
 #define T pair<int,int>
 
 using namespace std;
@@ -21,7 +25,9 @@ namespace server_side {
 class mtxSolver : public Solver<string, vector<vector<double>>> {
  public:
   string solve(vector<vector<double>> mat) override {
-    ISearcher<T, vector<State<T > *>> *searcher = new BestFirstSeracher<T >();
+    //ISearcher<T, vector<State<T > *>> *searcher = new BestFirstSeracher<T >();
+    //ISearcher<T, vector<State<T > *>> *searcher = new Bfs<T>();
+    ISearcher<T, vector<State<T > *>> *searcher = new Dfs<T>();
     Searchable<T > *searchable = new SearchableforMatrix(mat);
     vector<State<T > *> answer = searcher->search(searchable);
     if (answer.size() == 0) {

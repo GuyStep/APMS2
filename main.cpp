@@ -16,7 +16,7 @@ int main(int argc, char** argv){
   auto *solver = new mtxSolver();
   auto* ch = new MatrixHandler(solver,fcm);
   auto* server = new MySerialServer(ch);
-  server->open(5600,ch);
+  server->open(5602,ch);
   return 0;
 /*  auto *fcm = new FileCacheManager();
   auto *solver = new StringReverser();

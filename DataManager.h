@@ -6,6 +6,9 @@
 #define APMS2__DATAMANAGER_H_
 #include "algorithm"
 #include "vector"
+#include "State.h"
+#include <stack>
+#include "stack"
 using namespace std;
 template <class T>
 class DataManager {

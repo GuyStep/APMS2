@@ -89,10 +89,22 @@
 		<Unit filename="/home/amittulman/Desktop/APMS2/AlgoQueue.h">
 			<Option target="APMS2"/>
 		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/AlgoStack.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/AlgoStack.h">
+			<Option target="APMS2"/>
+		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/BestFirstSeracher.cpp">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/BestFirstSeracher.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/Bfs.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/Bfs.h">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/CacheManager.cpp">
@@ -108,6 +120,12 @@
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/DataManager.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/Dfs.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/Dfs.h">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/FileCacheManager.cpp">
