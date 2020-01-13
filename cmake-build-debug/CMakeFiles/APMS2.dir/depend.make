@@ -21,7 +21,6 @@ CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o: ../Searcher.h
 CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o: ../State.h
 
 CMakeFiles/APMS2.dir/Bfs.cpp.o: ../AlgoQueue.h
-CMakeFiles/APMS2.dir/Bfs.cpp.o: ../AlgoStack.h
 CMakeFiles/APMS2.dir/Bfs.cpp.o: ../Bfs.cpp
 CMakeFiles/APMS2.dir/Bfs.cpp.o: ../Bfs.h
 CMakeFiles/APMS2.dir/Bfs.cpp.o: ../DataManager.h

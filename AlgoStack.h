@@ -18,7 +18,7 @@ class AlgoStack : public DataManager<T>{
   void push(State<T>* temp) override {
     myQ.push(temp);
   }
-  /*State<T>* top(){
+  State<T>* top(){
     return myQ.top();
   }
   State<T>* pop() override {
@@ -49,7 +49,7 @@ class AlgoStack : public DataManager<T>{
       this->push(vec[i]);
     }
     return found;
-  }*/
+  }
 };
 
 #endif //APMS2__ALGOSTACK_H_

@@ -9,8 +9,6 @@
 #include "QueuePriority.h"
 #include "Searchable.h"
 #include "AlgoQueue.h"
-#include "AlgoStack.h"
-
 using namespace std;
 template <class T>
 class Bfs : public Searcher<T>{

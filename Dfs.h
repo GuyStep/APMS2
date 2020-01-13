@@ -17,14 +17,15 @@ using namespace std;
 template<class T>
 class Dfs : public Searcher<T> {
  private:
-  AlgoStack<State<T>*> stack;
+  AlgoStack<T> stack;
  public:
   vector<State<T>*> search(Searchable<T> *searchable) {
     State<T> *start = searchable->getStartPoint();
     State<T> *end = searchable->getGoalPoint();
     State<T> *curState;
+
     stack.push(start);
-    /*this->initSolutionSize();
+    this->initSolutionSize();
     while (!stack.empty()) {
       this->increaseSolutionSize();
       curState = stack.pop();
@@ -45,7 +46,7 @@ class Dfs : public Searcher<T> {
     }
     vector<State<T> *> emptyVector;
     this->deleteRedundency(emptyVector,&stack);
-    return emptyVector;*/
+    return emptyVector;
   }
 };
 
