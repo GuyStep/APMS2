@@ -13,32 +13,40 @@ void MatrixHandler::handleClient(int sock) {
   vector<vector<double>> mtx;
   string question = "";
   string solution;
-  string line ="";
+  string currentLine ="";
   bool endFlag = true;
   //reading from client
   while (endFlag) {
     char buffer[2048] = {0};
     int valread = read(sock, buffer, 2048);
+    bool endLine = false;
     if (valread > 0) {
       for (int i = 0; i < valread; i++) {
-        line += buffer[i];
-        if (line.length() > 0) { //question != ""
-          int findEnd = line.find("end");
-          if (findEnd >= 0) { //line from client = "end"
-            if(findEnd > 0) { //36.36end
-              string sub = line.substr(0,findEnd);
-              mtx.push_back(split(sub));
-              question += sub + "\n";
+            int findEnd = currentLine.find("end");
+            if (findEnd >= 0) { //line from client contains "end"
+                if (findEnd > 0) { //36.36end
+                    string sub = currentLine.substr(0, findEnd);
+                    mtx.push_back(split(sub));
+                    question += sub + "\n";
+                    currentLine = "";
+                    endFlag = false;
+                    break;
+
+                } else { //end
+                    endFlag = false;
+                    break;
+
+                }
             }
-            endFlag = false;
-            break;
-          }
-        }
-      }
-      if (endFlag) {
-        mtx.push_back(split(line));
-        question += line + "\n";
-        line = "";
+            else if (buffer[i] != '\n') { //cur char is not '\n'
+                currentLine += buffer[i];
+            }
+            else { //we found '\n'
+                mtx.push_back(split(currentLine));
+                question += currentLine + "\n";
+                currentLine = "";
+            }
+
       }
 
     } else { //no bytes read
