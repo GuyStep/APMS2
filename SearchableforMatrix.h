@@ -23,6 +23,7 @@ class SearchableforMatrix : public  Searchable<pair<int,int>>{
     return this->goal;
   }
   vector<State<pair<int,int>>*> getadjStates(State<pair<int,int>>* state) override;
-};
+  vector<State<pair<int, int>>*> getHeuristicAdj(State<pair<int, int>> *state, State<pair<int, int>> *goal) override ;
+  };
 
 #endif //APMS2__SEARCHABLEFORMATRIX_H_

@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/amittulman/Desktop/APMS2/AStar.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/APMS2/AStar.h">
+			<Option target="APMS2"/>
+		</Unit>
 		<Unit filename="/home/amittulman/Desktop/APMS2/AlgoQueue.h">
 			<Option target="APMS2"/>
 		</Unit>

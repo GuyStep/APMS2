@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "APMS2"
   "APMS2.pdb"
+  "CMakeFiles/APMS2.dir/AStar.cpp.o"
   "CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
   "CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o"
   "CMakeFiles/APMS2.dir/Bfs.cpp.o"

@@ -15,6 +15,7 @@
 #include "BestFirstSeracher.h"
 #include "Bfs.h"
 #include "Dfs.h"
+#include "AStar.h"
 
 
 #define T pair<int,int>
@@ -27,7 +28,9 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
   string solve(vector<vector<double>> mat) override {
     //ISearcher<T, vector<State<T > *>> *searcher = new BestFirstSeracher<T >();
     //ISearcher<T, vector<State<T > *>> *searcher = new Bfs<T>();
-    ISearcher<T, vector<State<T > *>> *searcher = new Dfs<T>();
+    //ISearcher<T, vector<State<T > *>> *searcher = new Dfs<T>();
+    ISearcher<T, vector<State<T > *>> *searcher = new AStar<T>();
+
     Searchable<T > *searchable = new SearchableforMatrix(mat);
     vector<State<T > *> answer = searcher->search(searchable);
     if (answer.size() == 0) {

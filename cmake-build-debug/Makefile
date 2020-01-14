@@ -123,6 +123,33 @@ APMS2/fast:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/build
 .PHONY : APMS2/fast
 
+AStar.o: AStar.cpp.o
+
+.PHONY : AStar.o
+
+# target to build an object file
+AStar.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AStar.cpp.o
+.PHONY : AStar.cpp.o
+
+AStar.i: AStar.cpp.i
+
+.PHONY : AStar.i
+
+# target to preprocess a source file
+AStar.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AStar.cpp.i
+.PHONY : AStar.cpp.i
+
+AStar.s: AStar.cpp.s
+
+.PHONY : AStar.s
+
+# target to generate assembly for a file
+AStar.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AStar.cpp.s
+.PHONY : AStar.cpp.s
+
 AlgoStack.o: AlgoStack.cpp.o
 
 .PHONY : AlgoStack.o
@@ -726,6 +753,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... APMS2"
 	@echo "... edit_cache"
+	@echo "... AStar.o"
+	@echo "... AStar.i"
+	@echo "... AStar.s"
 	@echo "... AlgoStack.o"
 	@echo "... AlgoStack.i"
 	@echo "... AlgoStack.s"

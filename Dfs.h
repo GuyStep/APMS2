@@ -13,7 +13,6 @@
 #include <stack>
 
 using namespace std;
-
 template<class T>
 class Dfs : public Searcher<T> {
  private:
@@ -23,7 +22,6 @@ class Dfs : public Searcher<T> {
     State<T> *start = searchable->getStartPoint();
     State<T> *end = searchable->getGoalPoint();
     State<T> *curState;
-
     stack.push(start);
     this->initSolutionSize();
     while (!stack.empty()) {

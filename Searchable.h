@@ -12,6 +12,7 @@ class Searchable {
   virtual State<T>* getStartPoint() =0;
   virtual State<T>* getGoalPoint() =0;
   virtual vector<State<T>*> getadjStates(State<T>* s) = 0;
+  virtual vector<State<T>*> getHeuristicAdj(State<T> *state, State<T> *goal) = 0;
 };
 
 #endif //APMS2__SEARCHABLE_H_
