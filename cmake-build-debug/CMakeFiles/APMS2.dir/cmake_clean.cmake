@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"
   "CMakeFiles/APMS2.dir/MySerialServer.cpp.o"
   "CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
+  "CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
   "CMakeFiles/APMS2.dir/QueuePriority.cpp.o"
   "CMakeFiles/APMS2.dir/Searchable.cpp.o"
   "CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o"

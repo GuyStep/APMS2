@@ -15,12 +15,18 @@ class FileCacheManager : public CacheManager {
  public:
     FileCacheManager()= default;
   void saveSolution(string key, string solution) override{
-      myCache.insert(pair<string, bool>(key, true));
-      writeToFile(key, solution);
+    std::size_t h1 = std::hash<std::string>{}(key);
+    std::string hashKey = to_string(h1);
+    myCache.insert(pair<string, bool>(hashKey, true));
+      writeToFile(hashKey, solution);
   }
 
   void writeToFile(string key, string solution) { // We need to take care of double names
-    string file_name = key;
+    std::size_t h1 = std::hash<std::string>{}(key);
+    std::string hashKey = to_string(h1);
+
+    string file_name = hashKey;
+
     fstream myFile;
     myFile.open(file_name, ios::out | ios :: binary | ios::trunc);
     if (myFile.is_open()) {
@@ -32,7 +38,9 @@ class FileCacheManager : public CacheManager {
   }
 
   string readFromFile(string key,string solution) {
-    ifstream infile(key, ios::binary | ios:: in);
+    std::size_t h1 = std::hash<std::string>{}(key);
+    std::string hashKey = to_string(h1);
+    ifstream infile(hashKey, ios::binary | ios:: in);
     if (!infile) {
       throw ("cant open file");
     }
@@ -42,11 +50,13 @@ class FileCacheManager : public CacheManager {
   }
 
   string returnSolution(string key) override {
+    std::size_t h1 = std::hash<std::string>{}(key);
+    std::string hashKey = to_string(h1);
     string file_name = key;
     bool flag = isExist(file_name);
     if (flag) {
       string object1;
-      object1 = readFromFile(key, object1);
+      object1 = readFromFile(hashKey, object1);
       return object1;
     } else {
       throw ("file doesnt exist");
@@ -54,9 +64,9 @@ class FileCacheManager : public CacheManager {
   }
 
   bool isExist(string problem) override{
-    return this->myCache.count(problem) != 0;
-/*    ifstream ifile(problem);
-    return (bool)ifile;*/
+    std::size_t h1 = std::hash<std::string>{}(problem);
+    std::string hashKey = to_string(h1);
+    return this->myCache.count(hashKey) != 0;
   }
 
 };

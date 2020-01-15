@@ -44,15 +44,17 @@ void MySerialServer::open(int port, ClientHandler* handler) {
 }
 
 void MySerialServer::stop(){
+
 }
 
 void start(int serverSocket,sockaddr_in address,ClientHandler* handler) {
   while (1) {
     char buffer[2048] = {0};
-      struct timeval tv;
-      tv.tv_sec = 120;
-      setsockopt(serverSocket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+    struct timeval tv;
+    tv.tv_sec = 120;
+    setsockopt(serverSocket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
     socklen_t addrlen = sizeof(sockaddr_in);
+
     int clientSocket = accept(serverSocket, (struct sockaddr *) &address,
                               &addrlen);
     if (clientSocket < 0) {
