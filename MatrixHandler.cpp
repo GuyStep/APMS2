@@ -55,6 +55,7 @@ void MatrixHandler::handleClient(int sock) {
     }
   }
     //--------------valid mtx?? ---------------------------
+    cout<<"FINISHED THE PARSING OF MATRIX"<<endl;
 
     if (this->cache->isExist(question)) { //exists in the cache
       solution = this->cache->returnSolution(question);
@@ -70,7 +71,8 @@ void MatrixHandler::handleClient(int sock) {
     solution = "";
     question = "";
     close(sock);
-  }
+
+}
 
 vector<double> MatrixHandler::split(string row) {
   vector<double> result;
@@ -79,7 +81,7 @@ vector<double> MatrixHandler::split(string row) {
   {
     string substr;
     getline( ss, substr, ',' );
-    cout<<substr<<endl;
+    //cout<<substr<<endl; // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FINISHED THE PARSING OF MATRIX
     result.push_back(stod(substr));
   }
   return result;

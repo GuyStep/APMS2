@@ -66,6 +66,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
       neighbors.push_back(downState);
     }
   }
+  return neighbors;
 }
 vector<State<pair<int, int>> *> SearchableforMatrix::getHeuristicAdj(State<pair<int, int>> *state,
                                                                      State<pair<int, int>> *goal) {
@@ -82,7 +83,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getHeuristicAdj(State<pair<
     pair<int, int> tempPair = {row + 1, column};
     double tempCost = mtx[row + 1][column];
     if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
+      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost,  tempCost+state->getCost() + combinedHeuristic , state));
     }
   }
   if (row - 1 >= 0) {
@@ -91,7 +92,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getHeuristicAdj(State<pair<
     pair<int, int> tempPair = {row - 1, column};
     double tempCost = mtx[row - 1][column];
     if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
+      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost,tempCost + state->getCost() + combinedHeuristic, state));
     }
   }
   if (column - 1 >= 0) {
@@ -100,7 +101,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getHeuristicAdj(State<pair<
     pair<int, int> tempPair = {row, column - 1};
     double tempCost = mtx[row][column - 1];
     if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
+      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost,tempCost + state->getCost() + combinedHeuristic, state));
     }
   }
   if (column + 1 < numOfColumns) {
@@ -109,7 +110,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getHeuristicAdj(State<pair<
     pair<int, int> tempPair = {row, column + 1};
     double tempCost = mtx[row][column + 1];
     if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
+      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost, tempCost + state->getCost() + combinedHeuristic, state));
     }
   }
 

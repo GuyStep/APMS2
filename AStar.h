@@ -27,18 +27,25 @@ class AStar : public Searcher<T>{
       if (*minState == *goal) {
         vector<State<T> *> path = this->backTrace(init, minState);
         this->deleteRedundency(path,&Q);
+          int solSize =  this->getSolutionSize(); // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+          cout<<"Size of solution: "<<solSize<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+          cout<<"Total Cost of BEST: "<<minState->getPathCost()<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         return path;
       }
 
       vector<State<T>*> neighbors = searchable->getHeuristicAdj(minState, goal);
       int neigborsSize = neighbors.size();
       for (int i = 0; i < neigborsSize; ++i) {
-        if (!Q.stateExsist(neighbors[i]) && !Q.stateExsist(neighbors[i])) {
-          Q.push(neighbors[i]);
-        } else if (!Q.stateExsist(neighbors[i])) {
+        if (!Q.stateExsist(neighbors[i]) && !Q.existClose(neighbors[i])) {
+            State<T>* state = neighbors[i];
+            state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
+
+            Q.push(neighbors[i]);
+        } else if (!Q.existClose(neighbors[i])) {
           State<T> *item = Q.find(neighbors[i]);
           State<T>* state = neighbors[i];
-          if (state->getCost() < item->getCost()) {
+            state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
+          if (state->getHeuristicCost() < item->getHeuristicCost()) {
             Q.removeState(item);
             Q.push(neighbors[i]);
           } else {

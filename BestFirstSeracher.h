@@ -9,6 +9,8 @@
 #include "QueuePriority.h"
 #include "Searchable.h"
 #include "AlgoQueue.h"
+#include <iostream>
+
 using namespace std;
 template <class T>
 class BestFirstSeracher : public Searcher<T>{
@@ -28,6 +30,9 @@ class BestFirstSeracher : public Searcher<T>{
       if(*curState == *goal) { //check if finished
         vector<State<T>*> path = this->backTrace(start,curState);
         this->deleteRedundency(path,&openQ);
+          int solSize =  this->getSolutionSize(); // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+          cout<<"Size of solution: "<<solSize<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+          cout<<"Total Cost of BEST: "<<curState->getPathCost()<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         return path;
       }
       vector<State<T>*> adj = searchable->getadjStates(curState); //get neighbors
@@ -36,11 +41,14 @@ class BestFirstSeracher : public Searcher<T>{
         bool first = openQ.stateExsist(adj[i]);
         bool second = openQ.existClose(adj[i]);
         if(!first && !second) {
-          openQ.push(adj[i]);
+            State<T>* state = adj[i];
+            state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
+          openQ.push(adj[i]); //SUM HERE
         } else if (!openQ.existClose(adj[i])) {
           State<T> *comparable = openQ.find(adj[i]);
-          State<T>* state = adj[i];
-          if (state->getCost() < comparable->getCost()) { //replace by cheaper edge
+          State<T>* state = adj[i];  //SUM HERE
+            state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
+            if (state->getPathCost() < comparable->getPathCost()) { //replace by cheaper edge
             openQ.removeState(comparable);
             openQ.push(state);
           } else {
@@ -55,6 +63,7 @@ class BestFirstSeracher : public Searcher<T>{
     vector<State<T>*> emptyPath;
     this->deleteRedundency(emptyPath,&openQ);
     return emptyPath;
+
   }
 };
 
