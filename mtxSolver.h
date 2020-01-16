@@ -24,13 +24,11 @@ using namespace std;
 
 namespace server_side {
 class mtxSolver : public Solver<string, vector<vector<double>>> {
- public:
-  string solve(vector<vector<double>> mat) override {
-    //ISearcher<T, vector<State<T > *>> *searcher = new BestFirstSeracher<T >();
-    //ISearcher<T, vector<State<T > *>> *searcher = new Bfs<T>();
-    //ISearcher<T, vector<State<T > *>> *searcher = new Dfs<T>();
-    ISearcher<T, vector<State<T > *>> *searcher = new AStar<T>();
 
+ public:
+    ISearcher<T, vector<State<T > *>> *searcher; //Instance of an algorithm as a member
+    mtxSolver(Searcher<T>* ser) {searcher = ser; }; //Constructor
+  string solve(vector<vector<double>> mat) override { //Solve Method
     Searchable<T > *searchable = new SearchableforMatrix(mat);
     vector<State<T > *> answer = searcher->search(searchable);
     if (answer.size() == 0) {
@@ -56,9 +54,6 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
       if (!endFlag) {
         path += ",";
       }
-      // delete (answer[i+1]);
-/*    delete (searcher);
-    delete (searchable);*/
     }
     return path;
   }

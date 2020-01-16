@@ -56,10 +56,6 @@ CMakeFiles/APMS2.dir/Dfs.cpp.o: ../Searchable.h
 CMakeFiles/APMS2.dir/Dfs.cpp.o: ../Searcher.h
 CMakeFiles/APMS2.dir/Dfs.cpp.o: ../State.h
 
-CMakeFiles/APMS2.dir/FileCacheManager.cpp.o: ../CacheManager.h
-CMakeFiles/APMS2.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
-CMakeFiles/APMS2.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
-
 CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../ISearcher.cpp
 CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../ISearcher.h
 CMakeFiles/APMS2.dir/ISearcher.cpp.o: ../Searchable.h
@@ -85,6 +81,14 @@ CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../FileCacheManager.h
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../Solver.h
+
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../CacheManager.h
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../ClientHandler.h
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../MyTestClientHandler.h
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../ParallelServer.cpp
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../ParallelServer.h
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../Solver.h
+CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../server_file.h
 
 CMakeFiles/APMS2.dir/QueuePriority.cpp.o: ../DataManager.h
 CMakeFiles/APMS2.dir/QueuePriority.cpp.o: ../QueuePriority.cpp
@@ -142,6 +146,7 @@ CMakeFiles/APMS2.dir/main.cpp.o: ../ISearcher.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../MatrixHandler.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../MyTestClientHandler.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../ParallelServer.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../QueuePriority.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../SearchableforMatrix.h

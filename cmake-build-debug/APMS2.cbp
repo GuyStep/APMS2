@@ -134,9 +134,6 @@
 		<Unit filename="/home/guy/CLionProjects/APMS2/Dfs.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.cpp">
-			<Option target="APMS2"/>
-		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.h">
 			<Option target="APMS2"/>
 		</Unit>
@@ -162,6 +159,12 @@
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/ParallelServer.cpp">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/guy/CLionProjects/APMS2/ParallelServer.h">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/QueuePriority.cpp">

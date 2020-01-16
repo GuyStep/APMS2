@@ -312,33 +312,6 @@ Dfs.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Dfs.cpp.s
 .PHONY : Dfs.cpp.s
 
-FileCacheManager.o: FileCacheManager.cpp.o
-
-.PHONY : FileCacheManager.o
-
-# target to build an object file
-FileCacheManager.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.o
-.PHONY : FileCacheManager.cpp.o
-
-FileCacheManager.i: FileCacheManager.cpp.i
-
-.PHONY : FileCacheManager.i
-
-# target to preprocess a source file
-FileCacheManager.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.i
-.PHONY : FileCacheManager.cpp.i
-
-FileCacheManager.s: FileCacheManager.cpp.s
-
-.PHONY : FileCacheManager.s
-
-# target to generate assembly for a file
-FileCacheManager.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/FileCacheManager.cpp.s
-.PHONY : FileCacheManager.cpp.s
-
 ISearcher.o: ISearcher.cpp.o
 
 .PHONY : ISearcher.o
@@ -446,6 +419,33 @@ MyTestClientHandler.s: MyTestClientHandler.cpp.s
 MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
+
+ParallelServer.o: ParallelServer.cpp.o
+
+.PHONY : ParallelServer.o
+
+# target to build an object file
+ParallelServer.cpp.o:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ParallelServer.cpp.o
+.PHONY : ParallelServer.cpp.o
+
+ParallelServer.i: ParallelServer.cpp.i
+
+.PHONY : ParallelServer.i
+
+# target to preprocess a source file
+ParallelServer.cpp.i:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ParallelServer.cpp.i
+.PHONY : ParallelServer.cpp.i
+
+ParallelServer.s: ParallelServer.cpp.s
+
+.PHONY : ParallelServer.s
+
+# target to generate assembly for a file
+ParallelServer.cpp.s:
+	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ParallelServer.cpp.s
+.PHONY : ParallelServer.cpp.s
 
 QueuePriority.o: QueuePriority.cpp.o
 
@@ -774,9 +774,6 @@ help:
 	@echo "... Dfs.o"
 	@echo "... Dfs.i"
 	@echo "... Dfs.s"
-	@echo "... FileCacheManager.o"
-	@echo "... FileCacheManager.i"
-	@echo "... FileCacheManager.s"
 	@echo "... ISearcher.o"
 	@echo "... ISearcher.i"
 	@echo "... ISearcher.s"
@@ -789,6 +786,9 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
+	@echo "... ParallelServer.o"
+	@echo "... ParallelServer.i"
+	@echo "... ParallelServer.s"
 	@echo "... QueuePriority.o"
 	@echo "... QueuePriority.i"
 	@echo "... QueuePriority.s"

@@ -9,6 +9,55 @@
 
 
 class FileCacheManager : public CacheManager {
+private:
+    unordered_map <string,bool> myCache {};
+
+public:
+    FileCacheManager()= default;
+    void saveSolution(string key, string solution) override{
+        std::size_t h1 = std::hash<std::string>{}(key);
+        std::string hashKey = to_string(h1);
+        myCache.insert(pair<string, bool>(hashKey, true));
+        writeToFile(hashKey, solution);
+    }
+
+    void writeToFile(string key, string solution) { // We need to take care of double names
+        std::size_t h1 = std::hash<std::string>{}(key);
+        std::string hashKey = to_string(h1);
+
+        string file_name = key;
+
+        //will always be string
+        ofstream outFile(key);
+        if (!outFile) {
+            throw "Failed creating file";
+        }
+        outFile<<solution;
+        outFile.close();
+    }
+
+    string returnSolution(string problem) override {
+        std::size_t h1 = std::hash<std::string>{}(problem);
+        std::string hashKey = to_string(h1);
+        string solution ="";
+        ifstream file_input(hashKey);
+        if (!file_input) {
+            throw "Failed opening file";
+        }
+        string line;
+        while (file_input >> line) {
+            solution += line;
+        }
+        file_input.close();
+        return solution;
+    }
+
+    bool isExist(string problem) override{
+        std::size_t h1 = std::hash<std::string>{}(problem);
+        std::string hashKey = to_string(h1);
+        return this->myCache.count(hashKey) != 0;
+    }
+    /*
  private:
   unordered_map <string,bool> myCache {};
 
@@ -55,9 +104,12 @@ class FileCacheManager : public CacheManager {
 
   bool isExist(string problem) override{
     return this->myCache.count(problem) != 0;
+*/
 /*    ifstream ifile(problem);
-    return (bool)ifile;*/
+    return (bool)ifile;*//*
+
   }
+*/
 
 };
 
