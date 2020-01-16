@@ -5,9 +5,7 @@
 #include <iostream>     // std::cout
 #include <sstream>
 #include "MatrixHandler.h"
-#include "CacheManager.h"
 #include <sys/socket.h>
-#include <iostream>
 #include <unistd.h>
 void MatrixHandler::handleClient(int sock) {
   vector<vector<double>> mtx;
@@ -81,7 +79,7 @@ vector<double> MatrixHandler::split(string row) {
   {
     string substr;
     getline( ss, substr, ',' );
-    //cout<<substr<<endl; // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FINISHED THE PARSING OF MATRIX
+    cout<<substr<<endl; // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FINISHED THE PARSING OF MATRIX
     result.push_back(stod(substr));
   }
   return result;
