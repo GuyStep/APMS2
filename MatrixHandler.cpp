@@ -79,7 +79,7 @@ vector<double> MatrixHandler::split(string row) {
   {
     string substr;
     getline( ss, substr, ',' );
-    cout<<substr<<endl; // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FINISHED THE PARSING OF MATRIX
+    //cout<<substr<<endl; // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FINISHED THE PARSING OF MATRIX
     result.push_back(stod(substr));
   }
   return result;

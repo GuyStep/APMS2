@@ -291,35 +291,9 @@ CMakeFiles/APMS2.dir/mtxSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/mtxSolver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/mtxSolver.cpp -o CMakeFiles/APMS2.dir/mtxSolver.cpp.s
 
-CMakeFiles/APMS2.dir/Bfs.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/Bfs.cpp.o: ../Bfs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/APMS2.dir/Bfs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Bfs.cpp.o -c /home/guy/CLionProjects/APMS2/Bfs.cpp
-
-CMakeFiles/APMS2.dir/Bfs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Bfs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/APMS2/Bfs.cpp > CMakeFiles/APMS2.dir/Bfs.cpp.i
-
-CMakeFiles/APMS2.dir/Bfs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Bfs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/Bfs.cpp -o CMakeFiles/APMS2.dir/Bfs.cpp.s
-
-CMakeFiles/APMS2.dir/Dfs.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/Dfs.cpp.o: ../Dfs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/APMS2.dir/Dfs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Dfs.cpp.o -c /home/guy/CLionProjects/APMS2/Dfs.cpp
-
-CMakeFiles/APMS2.dir/Dfs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Dfs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/CLionProjects/APMS2/Dfs.cpp > CMakeFiles/APMS2.dir/Dfs.cpp.i
-
-CMakeFiles/APMS2.dir/Dfs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Dfs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/CLionProjects/APMS2/Dfs.cpp -o CMakeFiles/APMS2.dir/Dfs.cpp.s
-
 CMakeFiles/APMS2.dir/AlgoStack.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/AlgoStack.cpp.o: ../AlgoStack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/APMS2.dir/AlgoStack.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/AlgoStack.cpp.o -c /home/guy/CLionProjects/APMS2/AlgoStack.cpp
 
 CMakeFiles/APMS2.dir/AlgoStack.cpp.i: cmake_force
@@ -332,7 +306,7 @@ CMakeFiles/APMS2.dir/AlgoStack.cpp.s: cmake_force
 
 CMakeFiles/APMS2.dir/AStar.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/AStar.cpp.o: ../AStar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/APMS2.dir/AStar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/APMS2.dir/AStar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/AStar.cpp.o -c /home/guy/CLionProjects/APMS2/AStar.cpp
 
 CMakeFiles/APMS2.dir/AStar.cpp.i: cmake_force
@@ -345,7 +319,7 @@ CMakeFiles/APMS2.dir/AStar.cpp.s: cmake_force
 
 CMakeFiles/APMS2.dir/ParallelServer.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../ParallelServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/ParallelServer.cpp.o -c /home/guy/CLionProjects/APMS2/ParallelServer.cpp
 
 CMakeFiles/APMS2.dir/ParallelServer.cpp.i: cmake_force
@@ -376,8 +350,6 @@ APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o" \
 "CMakeFiles/APMS2.dir/MatrixHandler.cpp.o" \
 "CMakeFiles/APMS2.dir/mtxSolver.cpp.o" \
-"CMakeFiles/APMS2.dir/Bfs.cpp.o" \
-"CMakeFiles/APMS2.dir/Dfs.cpp.o" \
 "CMakeFiles/APMS2.dir/AlgoStack.cpp.o" \
 "CMakeFiles/APMS2.dir/AStar.cpp.o" \
 "CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
@@ -403,14 +375,12 @@ APMS2: CMakeFiles/APMS2.dir/Searchable.cpp.o
 APMS2: CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o
 APMS2: CMakeFiles/APMS2.dir/MatrixHandler.cpp.o
 APMS2: CMakeFiles/APMS2.dir/mtxSolver.cpp.o
-APMS2: CMakeFiles/APMS2.dir/Bfs.cpp.o
-APMS2: CMakeFiles/APMS2.dir/Dfs.cpp.o
 APMS2: CMakeFiles/APMS2.dir/AlgoStack.cpp.o
 APMS2: CMakeFiles/APMS2.dir/AStar.cpp.o
 APMS2: CMakeFiles/APMS2.dir/ParallelServer.cpp.o
 APMS2: CMakeFiles/APMS2.dir/build.make
 APMS2: CMakeFiles/APMS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable APMS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guy/CLionProjects/APMS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable APMS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/APMS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

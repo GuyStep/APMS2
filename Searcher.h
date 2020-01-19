@@ -29,7 +29,7 @@ class Searcher : public ISearcher<T, vector<State<T>*>>{
     for(i; i>0 ;i--) {
       result.push_back(path[i-1]);
     }
-    cout<<"Total cost"<<totalCost<<endl;
+    //cout<<"Total cost"<<totalCost<<endl;
     return result;
   }
   void deleteRedundency(vector<State<T>*> path, DataManager<T>* data) {

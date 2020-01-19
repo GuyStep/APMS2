@@ -29,12 +29,20 @@ class Dfs : public Searcher<T> {
       curState = stack.pop();
       if (*curState == *end) {
         vector<State<T> *> path = this->backTrace(start, curState);
-        this->deleteRedundency(path,&stack);
+          curState->setPathCost(curState->getCost()+curState->getPrev()->getPathCost());
+
+          this->deleteRedundency(path,&stack);
+          cout<<"Total Cost: "<<curState->getPathCost()<<endl;
+          cout<<"Solution size: "<<this->solutionSize<<endl;
         return path;
       }
       if (!stack.existClose(curState)) {
-        stack.pushClose(curState);
-        vector<State<T>*> neighbors = searchable->getadjStates(curState);
+          if (curState->getPrev()!=NULL)
+            curState->setPathCost(curState->getCost()+curState->getPrev()->getPathCost());
+
+          stack.pushClose(curState);
+
+          vector<State<T>*> neighbors = searchable->getadjStates(curState);
         for (int i = 0; i < neighbors.size(); ++i) {
           stack.push(neighbors[i]);
         }

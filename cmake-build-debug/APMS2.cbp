@@ -107,9 +107,6 @@
 		<Unit filename="/home/guy/CLionProjects/APMS2/BestFirstSeracher.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Bfs.cpp">
-			<Option target="APMS2"/>
-		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/Bfs.h">
 			<Option target="APMS2"/>
 		</Unit>
@@ -126,9 +123,6 @@
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/DataManager.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Dfs.cpp">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/CLionProjects/APMS2/Dfs.h">

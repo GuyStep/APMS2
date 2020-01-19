@@ -26,7 +26,12 @@ class Bfs : public Searcher<T>{
       curState = Q.pop();
       //Q.pushClose(curState);
       if(*curState == *goal) { //check if finished
-        vector<State<T>*> path = this->backTrace(start,curState);
+          curState->setPathCost(curState->getCost()+curState->getPrev()->getPathCost());
+
+          vector<State<T>*> path = this->backTrace(start,curState);
+
+          cout<<"Total Cost: "<<curState->getPathCost()<<endl;
+          cout<<"Solution size: "<<this->solutionSize<<endl;
         this->deleteRedundency(path,&Q);
         return path;
       }
@@ -36,7 +41,11 @@ class Bfs : public Searcher<T>{
         //bool first = Q.stateExsist(adj[i]);
         bool second = Q.existClose(adj[i]);
         if(!second) {
-          Q.push(adj[i]);
+            if (curState->getPrev()!=NULL)
+                curState->setPathCost(curState->getCost()+curState->getPrev()->getPathCost());
+
+
+            Q.push(adj[i]);
           Q.pushClose(adj[i]);
         } else{
           delete(adj[i]);

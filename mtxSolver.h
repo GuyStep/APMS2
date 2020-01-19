@@ -31,7 +31,8 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
   string solve(vector<vector<double>> mat) override { //Solve Method
     Searchable<T > *searchable = new SearchableforMatrix(mat);
     vector<State<T > *> answer = searcher->search(searchable);
-    if (answer.size() == 0) {
+
+      if (answer.size() == 0) {
       return "no path";
     }
     string path = "";
@@ -42,13 +43,13 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
       T curState = answer[i]->getState();
       T nextState = answer[i + 1]->getState();
       if (curState.first > nextState.first) {
-        path = path + "Up";
+        path = path + "Up ("+ to_string((int)answer[i+1]->getPathCost())+")";
       } else if (curState.first < nextState.first) {
-        path = path + "Down";
+        path = path + "Down ("+ to_string((int)answer[i+1]->getPathCost())+")";
       } else if (curState.second > nextState.second) {
-        path = path + "Left";
+        path = path + "Left ("+ to_string((int)answer[i+1]->getPathCost())+")";
       } else if (curState.second < nextState.second) {
-        path = path + "Right";
+        path = path + "Right ("+ to_string((int)answer[i+1]->getPathCost())+")";
       }
       //delete (answer[i]);
       if (!endFlag) {
