@@ -15,10 +15,9 @@
 using namespace std;
 template<class T>
 class Dfs : public Searcher<T> {
- private:
-  AlgoStack<T> stack;
  public:
   vector<State<T>*> search(Searchable<T> *searchable) {
+    AlgoStack<T> stack;
     State<T> *start = searchable->getStartPoint();
     State<T> *end = searchable->getGoalPoint();
     State<T> *curState;

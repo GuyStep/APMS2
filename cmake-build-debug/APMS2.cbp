@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option working_dir="/home/amittulman/Desktop/finalProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option working_dir="/home/amittulman/Desktop/finalProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="APMS2">
-				<Option output="/home/guy/CLionProjects/APMS2/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option output="/home/amittulman/Desktop/finalProject/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amittulman/Desktop/finalProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/guy/CLionProjects/APMS2/."/>
+					<Add directory="/home/amittulman/Desktop/finalProject/."/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -45,20 +45,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="APMS2/fast">
-				<Option output="/home/guy/CLionProjects/APMS2/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option output="/home/amittulman/Desktop/finalProject/cmake-build-debug/APMS2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amittulman/Desktop/finalProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/guy/CLionProjects/APMS2/."/>
+					<Add directory="/home/amittulman/Desktop/finalProject/."/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -69,162 +69,165 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 APMS2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/guy/CLionProjects/APMS2/cmake-build-debug"/>
+				<Option working_dir="/home/amittulman/Desktop/finalProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/guy/CLionProjects/APMS2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/amittulman/Desktop/finalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/guy/CLionProjects/APMS2/AStar.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/AStar.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/AStar.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/AStar.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/AlgoQueue.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/AlgoQueue.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/AlgoStack.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/AlgoStack.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/AlgoStack.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/AlgoStack.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/BestFirstSeracher.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/BestFirstSeracher.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/BestFirstSeracher.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/BestFirstSeracher.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Bfs.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Bfs.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/CacheManager.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Boot.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/CacheManager.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/CacheManager.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ClientHandler.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/CacheManager.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ClientHandler.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/ClientHandler.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/DataManager.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/ClientHandler.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Dfs.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/DataManager.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/FileCacheManager.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Dfs.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ISearcher.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/FileCacheManager.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ISearcher.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/ISearcher.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MatrixHandler.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/ISearcher.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MatrixHandler.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/MatrixHandler.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MySerialServer.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/MatrixHandler.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MySerialServer.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/MySerialServer.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/MySerialServer.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/MyTestClientHandler.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/MyTestClientHandler.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ParallelServer.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/MyTestClientHandler.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/ParallelServer.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/ParallelServer.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/QueuePriority.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/ParallelServer.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/QueuePriority.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/QueuePriority.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Searchable.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/QueuePriority.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Searchable.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Searchable.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/SearchableforMatrix.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Searchable.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/SearchableforMatrix.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/SearchableforMatrix.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Searcher.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/SearchableforMatrix.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Searcher.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Searcher.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Solver.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Searcher.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/Solver.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Solver.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/State.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/Solver.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/State.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/State.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/StringReverser.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/State.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/StringReverser.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/StringReverser.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/boot_file.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/StringReverser.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/boot_file.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/boot_file.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/main.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/boot_file.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/mtxSolver.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/main.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/mtxSolver.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/mtxSolver.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/server_file.cpp">
+		<Unit filename="/home/amittulman/Desktop/finalProject/mtxSolver.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/server_file.h">
+		<Unit filename="/home/amittulman/Desktop/finalProject/server_file.cpp">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/CLionProjects/APMS2/CMakeLists.txt">
+		<Unit filename="/home/amittulman/Desktop/finalProject/server_file.h">
+			<Option target="APMS2"/>
+		</Unit>
+		<Unit filename="/home/amittulman/Desktop/finalProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

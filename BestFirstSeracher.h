@@ -14,10 +14,9 @@
 using namespace std;
 template <class T>
 class BestFirstSeracher : public Searcher<T>{
- protected:
-   QueuePriority<T> openQ;
  public:
   vector<State<T>*> search(Searchable<T>* searchable) {
+    QueuePriority<T> openQ;
     State<T>* curState;
     State<T>* start = searchable->getStartPoint();
     State<T>* goal = searchable->getGoalPoint();

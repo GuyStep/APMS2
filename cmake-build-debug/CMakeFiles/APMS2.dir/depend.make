@@ -117,6 +117,7 @@ CMakeFiles/APMS2.dir/main.cpp.o: ../AlgoQueue.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../AlgoStack.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../BestFirstSeracher.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../Bfs.h
+CMakeFiles/APMS2.dir/main.cpp.o: ../Boot.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../CacheManager.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../ClientHandler.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../DataManager.h

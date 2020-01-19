@@ -12,10 +12,9 @@
 using namespace std;
 template <class T>
 class Bfs : public Searcher<T>{
- private:
-  AlgoQueue<T> Q;
  public:
   vector<State<T>*> search(Searchable<T>* searchable) {
+    AlgoQueue<T> Q;
     State<T>* curState;
     State<T>* start = searchable->getStartPoint();
     State<T>* goal = searchable->getGoalPoint();
@@ -58,7 +57,7 @@ class Bfs : public Searcher<T>{
     return emptyPath;
   }
 
-  void deleteBfsRedundancy(vector<State<T>*> path, DataManager<T>* data) {
+  /*void deleteBfsRedundancy(vector<State<T>*> path, DataManager<T>* data) {
     State<T>* currState;
     while(!data->empty()) { // Q open not empty
       currState= data->pop();
@@ -77,7 +76,7 @@ class Bfs : public Searcher<T>{
         }
       }
     }
-  }
+  }*/
 };
 
 #endif //APMS2__BFS_H_

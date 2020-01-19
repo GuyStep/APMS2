@@ -12,10 +12,10 @@
 using namespace std;
 template <class T>
 class AStar : public Searcher<T>{
- private:
-  QueuePriority<T> Q;
+
  public:
   vector<State<T> *> search(Searchable<T> *searchable) {
+    QueuePriority<T> Q;
     this->initSolutionSize();
     State<T> *init = searchable->getStartPoint();
     State<T> *goal = searchable->getGoalPoint();
