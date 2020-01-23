@@ -39,7 +39,6 @@ class AStar : public Searcher<T>{
         if (!Q.stateExsist(neighbors[i]) && !Q.existClose(neighbors[i])) {
             State<T>* state = neighbors[i];
             state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
-
             Q.push(neighbors[i]);
         } else if (!Q.existClose(neighbors[i])) {
           State<T> *item = Q.find(neighbors[i]);
