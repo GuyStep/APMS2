@@ -15,49 +15,54 @@ class AStar : public Searcher<T>{
 
  public:
   vector<State<T> *> search(Searchable<T> *searchable) {
-    QueuePriority<T> Q;
+    QueuePriority<T> prior_queue;
     this->initSolutionSize();
     State<T> *init = searchable->getStartPoint();
     State<T> *goal = searchable->getGoalPoint();
-    Q.push(init);
-    while (!Q.empty()) {
-      State<T> *minState = Q.pop();
+    prior_queue.push(init);
+    //While there are nodes left, we keep checking them
+    while (!prior_queue.empty()) {
+      State<T> *current_state = prior_queue.pop();
       this->increaseSolutionSize();
-      Q.pushClose(minState);
-      if (*minState == *goal) {
-        vector<State<T> *> path = this->backTrace(init, minState);
-        this->deleteRedundency(path,&Q);
-          int solSize =  this->getSolutionSize(); // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-          cout<<"Size of solution: "<<solSize<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-          cout<<"Total Cost of BEST: "<<minState->getPathCost()<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      prior_queue.pushClose(current_state);
+      //The current state is the goal state, finish the algorithm
+      if (*current_state == *goal) {
+        vector<State<T> *> path = this->backTrace(init, current_state); //Get the path
+        this->deleteRedundency(path,&prior_queue);
+          //int solSize =  this->getSolutionSize();
+          //cout<<"Size of solution: "<<solSize<<endl; // DEBUG print - number of nodes checked
+          //cout<<"Total Cost of BEST: "<<current_state->getPathCost()<<endl; // DEBUG print - cost of the best path
         return path;
       }
 
-      vector<State<T>*> neighbors = searchable->getHeuristicAdj(minState, goal);
-      int neigborsSize = neighbors.size();
-      for (int i = 0; i < neigborsSize; ++i) {
-        if (!Q.stateExsist(neighbors[i]) && !Q.existClose(neighbors[i])) {
-            State<T>* state = neighbors[i];
-            state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
-            Q.push(neighbors[i]);
-        } else if (!Q.existClose(neighbors[i])) {
-          State<T> *item = Q.find(neighbors[i]);
-          State<T>* state = neighbors[i];
-            state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
-          if (state->getHeuristicCost() < item->getHeuristicCost()) {
-            Q.removeState(item);
-            Q.push(neighbors[i]);
-          } else {
-            delete (neighbors[i]);
+
+      vector<State<T>*> adjacent_states = searchable->getHeuristicAdj(current_state, goal);
+      int number_of_adjacent = adjacent_states.size();
+      for (int i = 0; i < number_of_adjacent; ++i) {
+          //If current adj state is not in one of the queues, get its heur cost
+          if (!prior_queue.stateExsist(adjacent_states[i]) && !prior_queue.existClose(adjacent_states[i])) {
+              State<T>* state = adjacent_states[i];
+              state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
+              prior_queue.push(adjacent_states[i]);
+          //If it is in the queus, we compare it
+          } else if (!prior_queue.existClose(adjacent_states[i])) {
+              State<T> *item = prior_queue.find(adjacent_states[i]);
+              State<T>* state = adjacent_states[i];
+              state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
+                if (state->getHeuristicCost() < item->getHeuristicCost()) {
+                    prior_queue.removeState(item);
+                    prior_queue.push(adjacent_states[i]);
+                } else {
+            delete (adjacent_states[i]);
           }
         } else {
-          delete (neighbors[i]);
+          delete (adjacent_states[i]);
         }
       }
     }
-
+    //No path found, return empty vector
     vector<State<T> *> emptyVector;
-    this->deleteRedundency(emptyVector,&Q);
+    this->deleteRedundency(emptyVector,&prior_queue);
     return emptyVector;
   }
 };

@@ -10,7 +10,6 @@
 #include "State.h"
 #include "Searchable.h"
 #include "ISearcher.h"
-//#include "Searcher.h"
 #include "SearchableforMatrix.h"
 #include "BestFirstSeracher.h"
 #include "Bfs.h"
@@ -42,6 +41,7 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
       bool endFlag = i + 2 == ansSize;
       T curState = answer[i]->getState();
       T nextState = answer[i + 1]->getState();
+      //Create the solution string
       if (curState.first > nextState.first) {
         path = path + "Up ("+ to_string((int)answer[i+1]->getPathCost())+")";
       } else if (curState.first < nextState.first) {
@@ -51,7 +51,6 @@ class mtxSolver : public Solver<string, vector<vector<double>>> {
       } else if (curState.second < nextState.second) {
         path = path + "Right ("+ to_string((int)answer[i+1]->getPathCost())+")";
       }
-      //delete (answer[i]);
       if (!endFlag) {
         path += ",";
       }

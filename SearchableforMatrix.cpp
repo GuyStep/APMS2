@@ -22,7 +22,7 @@ SearchableforMatrix::SearchableforMatrix(const vector<vector<double>> &matrix) {
 vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int, int>> *state) {
   long rows = this->mtx.size() - 2;
   long columns = this->mtx[1].size();
-  vector<State<pair<int,int>>*> neighbors;
+  vector<State<pair<int,int>>*> adjacent_states;
   int curRow = state->getState().first;
   int curCol = state->getState().second;
 
@@ -33,7 +33,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
     double temp = mtx[curRow+1][curCol] ;
     if (temp != -1) {
       State<pair<int, int>> *downState = new State<pair<int, int>>(downPair, this->mtx[curRow + 1][curCol], state);
-      neighbors.push_back(downState);
+      adjacent_states.push_back(downState);
     }
   }
   if(curRow - 1 >= 0) { //up neighbor
@@ -43,7 +43,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
     double temp = mtx[curRow-1][curCol] ;
     if (temp != -1) {
       State<pair<int, int>> *upState = new State<pair<int, int>>(upPair, this->mtx[curRow - 1][curCol], state);
-      neighbors.push_back(upState);
+      adjacent_states.push_back(upState);
     }
   }
   if(curCol + 1 < columns) { //right neighbor
@@ -53,7 +53,7 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
     double temp = mtx[curRow][curCol+1] ;
     if (temp != -1) {
       State<pair<int, int>> *rightState = new State<pair<int, int>>(rightPair, this->mtx[curRow][curCol + 1], state);
-      neighbors.push_back(rightState);
+      adjacent_states.push_back(rightState);
     }
   }
   if(curCol -1 >= 0) { //left neighbor
@@ -63,104 +63,60 @@ vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int
     double temp = mtx[curRow][curCol-1] ;
     if (temp != -1) {
       State<pair<int, int>> *downState = new State<pair<int, int>>(leftPair, this->mtx[curRow][curCol - 1], state);
-      neighbors.push_back(downState);
+      adjacent_states.push_back(downState);
     }
   }
-  return neighbors;
+  return adjacent_states;
 }
+
+//Heuristic evaluator, works by checking length of aproximate distance to the end
+//Also returns the adjacent states of a given state
 vector<State<pair<int, int>> *> SearchableforMatrix::getHeuristicAdj(State<pair<int, int>> *state,
                                                                      State<pair<int, int>> *goal) {
   unsigned long numOfRows = mtx.size() - 2;
   unsigned long numOfColumns = mtx[1].size();
-  vector<State<pair<int, int> > *> neighbors;
+  vector<State<pair<int, int> > *> adjacent_states;
   int row = state->getState().first;
   int column = state->getState().second;
-  int curHeuristic = abs(goal->getState().first - row) + abs(goal->getState().second - column);
-  int nextHeuristic, combinedHeuristic;
-  if (row + 1 < numOfRows) {
-    nextHeuristic = abs(goal->getState().first - row + 1) + abs(goal->getState().second - column);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
+  int current_heur = abs(goal->getState().first - row) + abs(goal->getState().second - column);
+  int next_heur, new_heur;
+  
+  if (row + 1 < numOfRows) { //Down neighbor
+    next_heur = abs(goal->getState().first - row + 1) + abs(goal->getState().second - column);
+    new_heur = abs(next_heur - current_heur);
     pair<int, int> tempPair = {row + 1, column};
-    double tempCost = mtx[row + 1][column];
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost,  tempCost+state->getCost() + combinedHeuristic , state));
+    double newCost = mtx[row + 1][column];
+    if (newCost != -1) {
+      adjacent_states.push_back(new State<pair<int, int>>(tempPair, newCost, newCost + state->getCost() + new_heur , state));
     }
   }
-  if (row - 1 >= 0) {
-    nextHeuristic = abs(goal->getState().first - row - 1) + abs(goal->getState().second - column);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
+  if (row - 1 >= 0) { //Up neighbor
+    next_heur = abs(goal->getState().first - row - 1) + abs(goal->getState().second - column);
+	  new_heur = abs(next_heur - current_heur);
     pair<int, int> tempPair = {row - 1, column};
-    double tempCost = mtx[row - 1][column];
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost,tempCost + state->getCost() + combinedHeuristic, state));
+    double newCost = mtx[row - 1][column];
+    if (newCost != -1) {
+      adjacent_states.push_back(new State<pair<int, int>>(tempPair, newCost, newCost + state->getCost() + new_heur, state));
     }
   }
-  if (column - 1 >= 0) {
-    nextHeuristic = abs(goal->getState().first - row) + abs(goal->getState().second - column - 1);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
+  if (column - 1 >= 0) { //Right neighbor
+    next_heur = abs(goal->getState().first - row) + abs(goal->getState().second - column - 1);
+	  new_heur = abs(next_heur - current_heur);
     pair<int, int> tempPair = {row, column - 1};
-    double tempCost = mtx[row][column - 1];
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost,tempCost + state->getCost() + combinedHeuristic, state));
+    double newCost = mtx[row][column - 1];
+    if (newCost != -1) {
+      adjacent_states.push_back(new State<pair<int, int>>(tempPair, newCost, newCost + state->getCost() + new_heur, state));
     }
   }
-  if (column + 1 < numOfColumns) {
-    nextHeuristic = abs(goal->getState().first - row) + abs(goal->getState().second - column + 1);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
+  if (column + 1 < numOfColumns) { //Left neighbor
+    next_heur = abs(goal->getState().first - row) + abs(goal->getState().second - column + 1);
+	  new_heur = abs(next_heur - current_heur);
     pair<int, int> tempPair = {row, column + 1};
-    double tempCost = mtx[row][column + 1];
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost, tempCost + state->getCost() + combinedHeuristic, state));
+    double newCost = mtx[row][column + 1];
+    if (newCost != -1) {
+      adjacent_states.push_back(new State<pair<int, int>>(tempPair, newCost, newCost + state->getCost() + new_heur, state));
     }
   }
 
-  return neighbors;
+  return adjacent_states;
 }
-/*
-vector<State<pair<int, int>> *> SearchableforMatrix::getadjStates(State<pair<int, int>> *state, State<pair<int, int>> *goal) {
-  unsigned long numOfRows = mtx.size() - 2;
-  unsigned long numOfColumns = mtx[1].size();
-  vector<State<pair<int, int> > *> neighbors;
-  int row = state->getState().first;
-  int column = state->getState().second;
-  int curHeuristic = abs(goal->getState().first - row) + abs(goal->getState().second - column);
-  int nextHeuristic, combinedHeuristic;
-  if (row + 1 < numOfRows ) {
-    nextHeuristic =  abs(goal->getState().first - row + 1) + abs(goal->getState().second - column);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
-    pair<int, int> tempPair = {row + 1, column};
-    double tempCost = mtx[row + 1][column] ;
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
-    }
-  }
-  if (row - 1 >= 0) {
-    nextHeuristic =  abs(goal->getState().first - row - 1) + abs(goal->getState().second - column);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
-    pair<int, int> tempPair = {row - 1, column};
-    double tempCost = mtx[row - 1][column] ;
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
-    }
-  }
-  if (column - 1 >= 0) {
-    nextHeuristic =  abs(goal->getState().first - row) + abs(goal->getState().second - column - 1);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
-    pair<int, int> tempPair = {row, column - 1};
-    double tempCost = mtx[row][column - 1];
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
-    }
-  }
-  if (column + 1 < numOfColumns) {
-    nextHeuristic =  abs(goal->getState().first - row) + abs(goal->getState().second - column + 1);
-    combinedHeuristic = abs(nextHeuristic - curHeuristic);
-    pair<int, int> tempPair = {row, column + 1};
-    double tempCost = mtx[row][column + 1];
-    if (tempCost != -1) {
-      neighbors.push_back(new State<pair<int, int>>(tempPair, tempCost + state->getCost() + combinedHeuristic, state));
-    }
-  }
-
-  return neighbors;
-}*/

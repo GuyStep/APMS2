@@ -17,23 +17,18 @@
 #include <string>
 #include <vector>
 #include <thread>
-
-
 using namespace std;
-
-
-
 class ParallelServer : public server_side::Server {
 
-    static void *thread_CallClientHandler(void *arg);
+    static void *handler_thread(void *arg);
 protected:
-    vector<pthread_t> trids;
-    bool shouldStop = false;
+    vector<pthread_t> threads_vector;
+    bool server_stop = false;
 
     void stop() override;
 
-    static void *thread_OpenDataServer(void *arg) ;
-    virtual void unique(int socket, bool *shouldStop, ClientHandler *client);
+    static void *server_thread(void *arg) ;
+    virtual void unique(int socket, bool *stop, ClientHandler *client);
 
 public:
     void open(int port, ClientHandler *c) override;
@@ -42,15 +37,15 @@ public:
 typedef struct {
     int socket;
     ClientHandler *client;
-} CallClientHandlerData;
+} ClientHandlerObject;
 
 
 typedef struct {
     ParallelServer* server;
     int port;
-    bool *shouldStop;
+    bool *stop_server;
     ClientHandler *client;
-} TCPDataServer;
+} ServerObject;
 
 
 

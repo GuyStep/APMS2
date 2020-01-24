@@ -13,6 +13,7 @@
 template <class T>
 class Searcher : public ISearcher<T, vector<State<T>*>>{
  public:
+	//Push all the vectors that are in the solution to a vector
   vector<State<T>*> backTrace(State<T>* start,State<T>* goal) {
    vector<State<T>*> path;
    vector<State<T>*> result;
@@ -27,7 +28,7 @@ class Searcher : public ISearcher<T, vector<State<T>*>>{
     path.push_back(start);
     unsigned long i = path.size();
     for(i; i>0 ;i--) {
-      result.push_back(path[i-1]);
+      result.push_back(path[i-1]); //Push the result states from the end
     }
     //cout<<"Total cost"<<totalCost<<endl;
     return result;

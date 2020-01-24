@@ -22,11 +22,13 @@
 namespace boot {
 class Main {
  public:
-  int mainFunc(int argc, char** argv) {
+    //Main function, ran by user
+    int mainFunc(int argc, char** argv) {
     auto *fcm = new FileCacheManager();
     auto *solver = new server_side::mtxSolver(new AStar<T >());
     auto* ch = new MatrixHandler(solver,fcm);
     auto* server = new ParallelServer();
+    //Open the server, with port received as argument
     server->open(atoi(argv[1]),ch);
 
     return 0;

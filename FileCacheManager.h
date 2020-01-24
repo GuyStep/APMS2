@@ -7,30 +7,30 @@
 
 #include "CacheManager.h"
 
-
+//This cache holds no solution on the stack,only in files.
+//Although, it has a map that can check if the solution exists in files in O(1) time complexity.
 class FileCacheManager : public CacheManager {
 private:
-    unordered_map <string,bool> myCache {};
+    unordered_map <string,bool> cache_map {};
 
 public:
     FileCacheManager()= default;
     void saveSolution(string key, string solution) override{
         std::size_t h1 = std::hash<std::string>{}(key);
         std::string hashKey = to_string(h1);
-        myCache.insert(pair<string, bool>(hashKey, true));
+        cache_map.insert(pair<string, bool>(hashKey, true));
         writeToFile(hashKey, solution);
     }
 
-    void writeToFile(string key, string solution) { // We need to take care of double names
+    void writeToFile(string key, string solution) {
         std::size_t h1 = std::hash<std::string>{}(key);
         std::string hashKey = to_string(h1);
 
         string file_name = key;
 
-        //will always be string
         ofstream outFile(key);
         if (!outFile) {
-            throw "Failed creating file";
+            throw "Failed file creation";
         }
         outFile<<solution;
         outFile.close();
@@ -42,7 +42,7 @@ public:
         string solution ="";
         ifstream file_input(hashKey);
         if (!file_input) {
-            throw "Failed opening file";
+            throw "Failed file opening";
         }
         string line;
         while (file_input >> line) {
@@ -55,61 +55,8 @@ public:
     bool isExist(string problem) override{
         std::size_t h1 = std::hash<std::string>{}(problem);
         std::string hashKey = to_string(h1);
-        return this->myCache.count(hashKey) != 0;
+        return this->cache_map.count(hashKey) != 0;
     }
-    /*
- private:
-  unordered_map <string,bool> myCache {};
-
- public:
-    FileCacheManager()= default;
-  void saveSolution(string key, string solution) override{
-      myCache.insert(pair<string, bool>(key, true));
-      writeToFile(key, solution);
-  }
-
-  void writeToFile(string key, string solution) { // We need to take care of double names
-    string file_name = key;
-    fstream myFile;
-    myFile.open(file_name, ios::out | ios :: binary | ios::trunc);
-    if (myFile.is_open()) {
-      myFile.write((char *)&solution, sizeof(solution));
-      myFile.close();
-    } else {
-      throw ("file didnt open");
-    }
-  }
-
-  string readFromFile(string key,string solution) {
-    ifstream infile(key, ios::binary | ios:: in);
-    if (!infile) {
-      throw ("cant open file");
-    }
-    infile.read((char *) &solution, sizeof(solution));
-    infile.close();
-    return solution;
-  }
-
-  string returnSolution(string key) override {
-    string file_name = key;
-    bool flag = isExist(file_name);
-    if (flag) {
-      string object1;
-      object1 = readFromFile(key, object1);
-      return object1;
-    } else {
-      throw ("file doesnt exist");
-    }
-  }
-
-  bool isExist(string problem) override{
-    return this->myCache.count(problem) != 0;
-*/
-/*    ifstream ifile(problem);
-    return (bool)ifile;*//*
-
-  }
-*/
 
 };
 

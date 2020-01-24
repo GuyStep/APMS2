@@ -30,9 +30,11 @@ class DataManager {
     close.pop_back();
     return top;
   }
+
    virtual void pushClose(State<T>* temp) {
     close.push_back(temp);
   }
+
   virtual bool existClose(State<T>* temp) {
     for (int i = 0; i< close.size(); i++) {
       if (*close[i] == *temp) {

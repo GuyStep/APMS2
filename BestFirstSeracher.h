@@ -16,40 +16,40 @@ template <class T>
 class BestFirstSeracher : public Searcher<T>{
  public:
   vector<State<T>*> search(Searchable<T>* searchable) {
-    QueuePriority<T> openQ;
+    QueuePriority<T> open_queue;
     State<T>* curState;
     State<T>* start = searchable->getStartPoint();
     State<T>* goal = searchable->getGoalPoint();
-    openQ.push(start);
+    open_queue.push(start);
     this->initSolutionSize();
-    while(!openQ.empty()) { //iterate over the problems by bfs
+    while(!open_queue.empty()) { //iterate over the states by bfs
       this->increaseSolutionSize();
-      curState = openQ.pop();
-      openQ.pushClose(curState);
-      if(*curState == *goal) { //check if finished
-        vector<State<T>*> path = this->backTrace(start,curState);
-        this->deleteRedundency(path,&openQ);
-          int solSize =  this->getSolutionSize(); // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-          cout<<"Size of solution: "<<solSize<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-          cout<<"Total Cost of BEST: "<<curState->getPathCost()<<endl; // @@@@@@@@@@ PRINT DEBUG @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        return path;
+      curState = open_queue.pop();
+      open_queue.pushClose(curState);
+      if(*curState == *goal) { //check if finished, if so, finish algorithm
+		vector<State<T>*> path = this->backTrace(start,curState); //get the path
+		this->deleteRedundency(path,&open_queue);
+		  //int solSize =  this->getSolutionSize();
+		  //cout<<"Size of solution: "<<solSize<<endl; // DEBUG print - number of nodes checked
+		  //cout<<"Total Cost of BEST: "<<current_state->getPathCost()<<endl; // DEBUG print - cost of the best path
+		  return path;
       }
-      vector<State<T>*> adj = searchable->getadjStates(curState); //get neighbors
-      int sizeadj = adj.size();
-      for (int i = 0; i < sizeadj; i++) {
-        bool first = openQ.stateExsist(adj[i]);
-        bool second = openQ.existClose(adj[i]);
+      vector<State<T>*> adj = searchable->getadjStates(curState); //get adjacent states
+      int number_of_adjacent = adj.size();
+      for (int i = 0; i < number_of_adjacent; i++) {
+        bool first = open_queue.stateExsist(adj[i]);
+        bool second = open_queue.existClose(adj[i]);
         if(!first && !second) {
             State<T>* state = adj[i];
             state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
-          openQ.push(adj[i]); //SUM HERE
-        } else if (!openQ.existClose(adj[i])) {
-          State<T> *comparable = openQ.find(adj[i]);
-          State<T>* state = adj[i];  //SUM HERE
+          open_queue.push(adj[i]);
+        } else if (!open_queue.existClose(adj[i])) {
+          State<T> *comparable = open_queue.find(adj[i]);
+          State<T>* state = adj[i];
             state->setPathCost(state->getCost()+state->getPrev()->getPathCost());
             if (state->getPathCost() < comparable->getPathCost()) { //replace by cheaper edge
-            openQ.removeState(comparable);
-            openQ.push(state);
+            open_queue.removeState(comparable);
+            open_queue.push(state);
           } else {
             delete(adj[i]);
           }
@@ -58,9 +58,9 @@ class BestFirstSeracher : public Searcher<T>{
         }
       }
     }
-    // no path to the goal
+    // no path to the goal. return empty vector
     vector<State<T>*> emptyPath;
-    this->deleteRedundency(emptyPath,&openQ);
+    this->deleteRedundency(emptyPath,&open_queue);
     return emptyPath;
 
   }

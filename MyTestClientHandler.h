@@ -24,9 +24,6 @@ private:
 
 };
 
-
-
-
 #endif //APMS2_MYTESTCLIENTHANDLER_H
 
 

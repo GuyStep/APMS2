@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amittulman/Desktop/finalProject
+CMAKE_SOURCE_DIR = "/home/guy/Desktop/Milestone 2/Code"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amittulman/Desktop/finalProject/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/amittulman/Desktop/finalProject/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/amittulman/Desktop/clion-2019.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amittulman/Desktop/finalProject/cmake-build-debug/CMakeFiles /home/amittulman/Desktop/finalProject/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amittulman/Desktop/finalProject/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -122,168 +122,6 @@ APMS2: cmake_check_build_system
 APMS2/fast:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/build
 .PHONY : APMS2/fast
-
-AStar.o: AStar.cpp.o
-
-.PHONY : AStar.o
-
-# target to build an object file
-AStar.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AStar.cpp.o
-.PHONY : AStar.cpp.o
-
-AStar.i: AStar.cpp.i
-
-.PHONY : AStar.i
-
-# target to preprocess a source file
-AStar.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AStar.cpp.i
-.PHONY : AStar.cpp.i
-
-AStar.s: AStar.cpp.s
-
-.PHONY : AStar.s
-
-# target to generate assembly for a file
-AStar.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AStar.cpp.s
-.PHONY : AStar.cpp.s
-
-AlgoStack.o: AlgoStack.cpp.o
-
-.PHONY : AlgoStack.o
-
-# target to build an object file
-AlgoStack.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AlgoStack.cpp.o
-.PHONY : AlgoStack.cpp.o
-
-AlgoStack.i: AlgoStack.cpp.i
-
-.PHONY : AlgoStack.i
-
-# target to preprocess a source file
-AlgoStack.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AlgoStack.cpp.i
-.PHONY : AlgoStack.cpp.i
-
-AlgoStack.s: AlgoStack.cpp.s
-
-.PHONY : AlgoStack.s
-
-# target to generate assembly for a file
-AlgoStack.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/AlgoStack.cpp.s
-.PHONY : AlgoStack.cpp.s
-
-BestFirstSeracher.o: BestFirstSeracher.cpp.o
-
-.PHONY : BestFirstSeracher.o
-
-# target to build an object file
-BestFirstSeracher.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.o
-.PHONY : BestFirstSeracher.cpp.o
-
-BestFirstSeracher.i: BestFirstSeracher.cpp.i
-
-.PHONY : BestFirstSeracher.i
-
-# target to preprocess a source file
-BestFirstSeracher.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.i
-.PHONY : BestFirstSeracher.cpp.i
-
-BestFirstSeracher.s: BestFirstSeracher.cpp.s
-
-.PHONY : BestFirstSeracher.s
-
-# target to generate assembly for a file
-BestFirstSeracher.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/BestFirstSeracher.cpp.s
-.PHONY : BestFirstSeracher.cpp.s
-
-CacheManager.o: CacheManager.cpp.o
-
-.PHONY : CacheManager.o
-
-# target to build an object file
-CacheManager.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/CacheManager.cpp.o
-.PHONY : CacheManager.cpp.o
-
-CacheManager.i: CacheManager.cpp.i
-
-.PHONY : CacheManager.i
-
-# target to preprocess a source file
-CacheManager.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/CacheManager.cpp.i
-.PHONY : CacheManager.cpp.i
-
-CacheManager.s: CacheManager.cpp.s
-
-.PHONY : CacheManager.s
-
-# target to generate assembly for a file
-CacheManager.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/CacheManager.cpp.s
-.PHONY : CacheManager.cpp.s
-
-ClientHandler.o: ClientHandler.cpp.o
-
-.PHONY : ClientHandler.o
-
-# target to build an object file
-ClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.o
-.PHONY : ClientHandler.cpp.o
-
-ClientHandler.i: ClientHandler.cpp.i
-
-.PHONY : ClientHandler.i
-
-# target to preprocess a source file
-ClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.i
-.PHONY : ClientHandler.cpp.i
-
-ClientHandler.s: ClientHandler.cpp.s
-
-.PHONY : ClientHandler.s
-
-# target to generate assembly for a file
-ClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ClientHandler.cpp.s
-.PHONY : ClientHandler.cpp.s
-
-ISearcher.o: ISearcher.cpp.o
-
-.PHONY : ISearcher.o
-
-# target to build an object file
-ISearcher.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.o
-.PHONY : ISearcher.cpp.o
-
-ISearcher.i: ISearcher.cpp.i
-
-.PHONY : ISearcher.i
-
-# target to preprocess a source file
-ISearcher.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.i
-.PHONY : ISearcher.cpp.i
-
-ISearcher.s: ISearcher.cpp.s
-
-.PHONY : ISearcher.s
-
-# target to generate assembly for a file
-ISearcher.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ISearcher.cpp.s
-.PHONY : ISearcher.cpp.s
 
 MatrixHandler.o: MatrixHandler.cpp.o
 
@@ -392,60 +230,6 @@ ParallelServer.s: ParallelServer.cpp.s
 ParallelServer.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/ParallelServer.cpp.s
 .PHONY : ParallelServer.cpp.s
-
-QueuePriority.o: QueuePriority.cpp.o
-
-.PHONY : QueuePriority.o
-
-# target to build an object file
-QueuePriority.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/QueuePriority.cpp.o
-.PHONY : QueuePriority.cpp.o
-
-QueuePriority.i: QueuePriority.cpp.i
-
-.PHONY : QueuePriority.i
-
-# target to preprocess a source file
-QueuePriority.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/QueuePriority.cpp.i
-.PHONY : QueuePriority.cpp.i
-
-QueuePriority.s: QueuePriority.cpp.s
-
-.PHONY : QueuePriority.s
-
-# target to generate assembly for a file
-QueuePriority.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/QueuePriority.cpp.s
-.PHONY : QueuePriority.cpp.s
-
-Searchable.o: Searchable.cpp.o
-
-.PHONY : Searchable.o
-
-# target to build an object file
-Searchable.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.o
-.PHONY : Searchable.cpp.o
-
-Searchable.i: Searchable.cpp.i
-
-.PHONY : Searchable.i
-
-# target to preprocess a source file
-Searchable.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.i
-.PHONY : Searchable.cpp.i
-
-Searchable.s: Searchable.cpp.s
-
-.PHONY : Searchable.s
-
-# target to generate assembly for a file
-Searchable.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searchable.cpp.s
-.PHONY : Searchable.cpp.s
 
 SearchableforMatrix.o: SearchableforMatrix.cpp.o
 
@@ -582,33 +366,6 @@ StringReverser.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.s
 .PHONY : StringReverser.cpp.s
 
-boot_file.o: boot_file.cpp.o
-
-.PHONY : boot_file.o
-
-# target to build an object file
-boot_file.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.o
-.PHONY : boot_file.cpp.o
-
-boot_file.i: boot_file.cpp.i
-
-.PHONY : boot_file.i
-
-# target to preprocess a source file
-boot_file.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.i
-.PHONY : boot_file.cpp.i
-
-boot_file.s: boot_file.cpp.s
-
-.PHONY : boot_file.s
-
-# target to generate assembly for a file
-boot_file.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/boot_file.cpp.s
-.PHONY : boot_file.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -635,33 +392,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-mtxSolver.o: mtxSolver.cpp.o
-
-.PHONY : mtxSolver.o
-
-# target to build an object file
-mtxSolver.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/mtxSolver.cpp.o
-.PHONY : mtxSolver.cpp.o
-
-mtxSolver.i: mtxSolver.cpp.i
-
-.PHONY : mtxSolver.i
-
-# target to preprocess a source file
-mtxSolver.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/mtxSolver.cpp.i
-.PHONY : mtxSolver.cpp.i
-
-mtxSolver.s: mtxSolver.cpp.s
-
-.PHONY : mtxSolver.s
-
-# target to generate assembly for a file
-mtxSolver.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/mtxSolver.cpp.s
-.PHONY : mtxSolver.cpp.s
 
 server_file.o: server_file.cpp.o
 
@@ -699,24 +429,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... APMS2"
 	@echo "... edit_cache"
-	@echo "... AStar.o"
-	@echo "... AStar.i"
-	@echo "... AStar.s"
-	@echo "... AlgoStack.o"
-	@echo "... AlgoStack.i"
-	@echo "... AlgoStack.s"
-	@echo "... BestFirstSeracher.o"
-	@echo "... BestFirstSeracher.i"
-	@echo "... BestFirstSeracher.s"
-	@echo "... CacheManager.o"
-	@echo "... CacheManager.i"
-	@echo "... CacheManager.s"
-	@echo "... ClientHandler.o"
-	@echo "... ClientHandler.i"
-	@echo "... ClientHandler.s"
-	@echo "... ISearcher.o"
-	@echo "... ISearcher.i"
-	@echo "... ISearcher.s"
 	@echo "... MatrixHandler.o"
 	@echo "... MatrixHandler.i"
 	@echo "... MatrixHandler.s"
@@ -729,12 +441,6 @@ help:
 	@echo "... ParallelServer.o"
 	@echo "... ParallelServer.i"
 	@echo "... ParallelServer.s"
-	@echo "... QueuePriority.o"
-	@echo "... QueuePriority.i"
-	@echo "... QueuePriority.s"
-	@echo "... Searchable.o"
-	@echo "... Searchable.i"
-	@echo "... Searchable.s"
 	@echo "... SearchableforMatrix.o"
 	@echo "... SearchableforMatrix.i"
 	@echo "... SearchableforMatrix.s"
@@ -750,15 +456,9 @@ help:
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"
-	@echo "... boot_file.o"
-	@echo "... boot_file.i"
-	@echo "... boot_file.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mtxSolver.o"
-	@echo "... mtxSolver.i"
-	@echo "... mtxSolver.s"
 	@echo "... server_file.o"
 	@echo "... server_file.i"
 	@echo "... server_file.s"

@@ -6,5 +6,5 @@ CXX_FLAGS = -pthread -pthread -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/amittulman/Desktop/finalProject/. 
+CXX_INCLUDES = -I"/home/guy/Desktop/Milestone 2/Code/." 
 

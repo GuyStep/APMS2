@@ -1,4 +1,4 @@
-# Install script for directory: /home/amittulman/Desktop/finalProject
+# Install script for directory: /home/guy/Desktop/Milestone 2/Code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/amittulman/Desktop/finalProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

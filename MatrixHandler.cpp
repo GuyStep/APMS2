@@ -22,7 +22,7 @@ void MatrixHandler::handleClient(int sock) {
       for (int i = 0; i < valread; i++) {
             int findEnd = currentLine.find("end");
             if (findEnd >= 0) { //line from client contains "end"
-                if (findEnd > 0) { //36.36end
+                if (findEnd > 0) {
                     string sub = currentLine.substr(0, findEnd);
                     mtx.push_back(split(sub));
                     question += sub + "\n";
@@ -33,7 +33,6 @@ void MatrixHandler::handleClient(int sock) {
                 } else { //end
                     endFlag = false;
                     break;
-
                 }
             }
             else if (buffer[i] != '\n') { //cur char is not '\n'
@@ -44,16 +43,13 @@ void MatrixHandler::handleClient(int sock) {
                 question += currentLine + "\n";
                 currentLine = "";
             }
-
       }
-
     } else { //no bytes read
       close(sock);
       return;
     }
   }
-    //--------------valid mtx?? ---------------------------
-    cout<<"FINISHED THE PARSING OF MATRIX"<<endl;
+    //cout<<"FINISHED THE PARSING OF MATRIX"<<endl;
 
     if (this->cache->isExist(question)) { //exists in the cache
       solution = this->cache->returnSolution(question);
@@ -64,12 +60,11 @@ void MatrixHandler::handleClient(int sock) {
     solution = solution + '\n';
     int is_sent = send(sock, solution.c_str(), solution.length(), 0);
     if (is_sent < 0) {
-      std::cout << "Error sending solution" << std::endl;
+      std::cout << "Error in solution sending " << std::endl;
     }
     solution = "";
     question = "";
     close(sock);
-
 }
 
 vector<double> MatrixHandler::split(string row) {

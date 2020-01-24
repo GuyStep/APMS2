@@ -8,35 +8,26 @@
 #include <stdio.h>
 #include <signal.h>
 
-void *ParallelServer::thread_CallClientHandler(void *arg) {
-    CallClientHandlerData *callClientHandlerData = (CallClientHandlerData *) arg;
+void *ParallelServer::handler_thread(void *arg) {
+    ClientHandlerObject *callClientHandlerData = (ClientHandlerObject *) arg;
     callClientHandlerData->client->handleClient(callClientHandlerData->socket);
-    //delete (callClientHandlerData);
     return nullptr;
 }
 
 void ParallelServer::unique(int socket, bool *shouldStop, ClientHandler *client) {
-
     int socketFd = socket;
-    int newsockfd; // new socket fileDescriptor
+    int newsockfd;
     int clilen;
 
-    vector<pthread_t> trids;
+    vector<pthread_t> threads_vector;
 
     struct sockaddr_in serv_addr, cli_addr;
-
-    //start listening for the clients using the main socket
-    listen(socketFd, SOMAXCONN);
+    listen(socketFd, 10);
 
     clilen = sizeof(cli_addr);
 
     while (true) {
-
-        //accept actual connection from the client
-
         newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
-
-        //if connections with the client failed
         if (newsockfd < 0) {
             if (*shouldStop) {
                 break;
@@ -44,17 +35,17 @@ void ParallelServer::unique(int socket, bool *shouldStop, ClientHandler *client)
             if (errno == EWOULDBLOCK) {
                 continue;
             }
-            perror("ERROR on accept");
+            perror("Failed accepting client");
             exit(1);
         }
-        CallClientHandlerData *callClientHandlerData;
-        callClientHandlerData = new CallClientHandlerData();
+        ClientHandlerObject *callClientHandlerData;
+        callClientHandlerData = new ClientHandlerObject();
 
         callClientHandlerData->socket = newsockfd;
         callClientHandlerData->client = client;
-        pthread_t trid;
-        pthread_create(&trid, nullptr, thread_CallClientHandler, callClientHandlerData);
-        trids.push_back(trid);
+        pthread_t single_thread;
+		pthread_create(&single_thread, nullptr, handler_thread, callClientHandlerData);
+        threads_vector.push_back(single_thread);
 
         timeval timeout;
         timeout.tv_sec = 15;
@@ -62,67 +53,60 @@ void ParallelServer::unique(int socket, bool *shouldStop, ClientHandler *client)
         setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
     }
 
-
-    for (int i = 0; i < trids.size(); i++) {
-        pthread_join(trids[i], nullptr);
+    for (int i = 0; i < threads_vector.size(); i++) {
+        pthread_join(threads_vector[i], nullptr);
     }
 }
 
 void ParallelServer::open(int port, ClientHandler *c)  {
-    TCPDataServer *params;
-    params = new TCPDataServer();
+    ServerObject *params;
+    params = new ServerObject();
     params->server = this;
     params->port = port;
     params->client = c;
-    params->shouldStop = &shouldStop;
-    pthread_t trid;
-    pthread_create(&trid, nullptr, thread_OpenDataServer, params);
-    pthread_join(trid, nullptr);
-    trids.push_back(trid);
+    params->stop_server = &server_stop;
+    pthread_t single_thread;
+	pthread_create(&single_thread, nullptr, server_thread, params);
+    pthread_join(single_thread, nullptr);
+    threads_vector.push_back(single_thread);
 }
 
 void ParallelServer::stop() {
-    shouldStop = true;
-    for (int i = 0; i < trids.size(); i++) {
-        pthread_join(trids[i], nullptr);
+	server_stop = true;
+	int number_of_threads = threads_vector.size();
+    for (int i = 0; i < number_of_threads; i++) {
+        pthread_join(threads_vector[i], nullptr);
     }
 }
 
-void *ParallelServer::thread_OpenDataServer(void *arg) {
-    TCPDataServer *params = (TCPDataServer *) arg;
-
-    int socketFd; // main socket fileDescriptor
+void *ParallelServer::server_thread(void *arg) {
+    ServerObject *server = (ServerObject *) arg;
+    int socketFd;
 
 
     struct sockaddr_in serv_addr, cli_addr;
 
-    //creating socket object
     socketFd = socket(AF_INET, SOCK_STREAM, 0);
-    //if creation faild
     if (socketFd < 0) {
-        perror("ERROR opening socket");
+        perror("Failed opening socket");
         exit(1);
     }
 
-    //Initialize socket structure
     bzero((char *) &serv_addr, sizeof(serv_addr));
 
-    serv_addr.sin_family = AF_INET; // tcp server
-    serv_addr.sin_addr.s_addr = INADDR_ANY; //server ip (0.0.0.0 for all incoming connections)
-    serv_addr.sin_port = htons(params->port); //init server port
+    serv_addr.sin_family = AF_INET;
+    serv_addr.sin_addr.s_addr = INADDR_ANY;
+    serv_addr.sin_port = htons(server->port);
 
-    //bind the host address using bind() call
     if (bind(socketFd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) {
-        //if binding faild
-        perror("ERROR on binding");
+        perror("Failed binding socket");
         exit(1);
     }
 
-
-    params->server->unique(socketFd,params->shouldStop,params->client );
+    server->server->unique(socketFd, server->stop_server, server->client );
 
     close(socketFd);
-    delete (params->client);
-    delete (params);
+    delete (server->client);
+    delete (server);
     return nullptr;
 }

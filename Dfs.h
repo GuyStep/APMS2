@@ -20,33 +20,33 @@ class Dfs : public Searcher<T> {
     AlgoStack<T> stack;
     State<T> *start = searchable->getStartPoint();
     State<T> *end = searchable->getGoalPoint();
-    State<T> *curState;
+    State<T> *current_state;
     stack.push(start);
     this->initSolutionSize();
     while (!stack.empty()) {
       this->increaseSolutionSize();
-      curState = stack.pop();
-      if (*curState == *end) {
-        vector<State<T> *> path = this->backTrace(start, curState);
-          curState->setPathCost(curState->getCost()+curState->getPrev()->getPathCost());
+		current_state = stack.pop();
+      if (*current_state == *end) {
+        vector<State<T> *> path = this->backTrace(start, current_state);
+          current_state->setPathCost(current_state->getCost() + current_state->getPrev()->getPathCost());
 
           this->deleteRedundency(path,&stack);
-          cout<<"Total Cost: "<<curState->getPathCost()<<endl;
-          cout<<"Solution size: "<<this->solutionSize<<endl;
+          //cout<<"Total Cost: "<<current_state->getPathCost()<<endl;
+          //cout<<"Solution size: "<<this->solutionSize<<endl;
         return path;
       }
-      if (!stack.existClose(curState)) {
-          if (curState->getPrev()!=NULL)
-            curState->setPathCost(curState->getCost()+curState->getPrev()->getPathCost());
+      if (!stack.existClose(current_state)) {
+          if (current_state->getPrev() != NULL)
+            current_state->setPathCost(current_state->getCost() + current_state->getPrev()->getPathCost());
 
-          stack.pushClose(curState);
+          stack.pushClose(current_state);
 
-          vector<State<T>*> neighbors = searchable->getadjStates(curState);
-        for (int i = 0; i < neighbors.size(); ++i) {
-          stack.push(neighbors[i]);
+          vector<State<T>*> adjacent_states = searchable->getadjStates(current_state);
+        for (int i = 0; i < adjacent_states.size(); ++i) {
+          stack.push(adjacent_states[i]);
         }
       } else {
-        delete (curState);
+        delete (current_state);
       }
     }
     vector<State<T> *> emptyVector;

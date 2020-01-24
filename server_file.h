@@ -14,6 +14,4 @@ public:
     virtual void open(int port, ClientHandler* ch) = 0;
     virtual void stop() = 0;
 };
-
-
 #endif //APMS2_SERVER_FILE_H
