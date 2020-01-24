@@ -70,22 +70,9 @@ CMakeFiles/APMS2.dir/MySerialServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/MySerialServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/MySerialServer.cpp" -o CMakeFiles/APMS2.dir/MySerialServer.cpp.s
 
-CMakeFiles/APMS2.dir/server_file.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/server_file.cpp.o: ../server_file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/APMS2.dir/server_file.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/server_file.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/server_file.cpp"
-
-CMakeFiles/APMS2.dir/server_file.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/server_file.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/guy/Desktop/Milestone 2/Code/server_file.cpp" > CMakeFiles/APMS2.dir/server_file.cpp.i
-
-CMakeFiles/APMS2.dir/server_file.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/server_file.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/server_file.cpp" -o CMakeFiles/APMS2.dir/server_file.cpp.s
-
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/MyTestClientHandler.cpp"
 
 CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.i: cmake_force
@@ -96,35 +83,9 @@ CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/MyTestClientHandler.cpp" -o CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.s
 
-CMakeFiles/APMS2.dir/Solver.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/Solver.cpp.o: ../Solver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/APMS2.dir/Solver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Solver.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/Solver.cpp"
-
-CMakeFiles/APMS2.dir/Solver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Solver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/guy/Desktop/Milestone 2/Code/Solver.cpp" > CMakeFiles/APMS2.dir/Solver.cpp.i
-
-CMakeFiles/APMS2.dir/Solver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Solver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/Solver.cpp" -o CMakeFiles/APMS2.dir/Solver.cpp.s
-
-CMakeFiles/APMS2.dir/StringReverser.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/StringReverser.cpp.o: ../StringReverser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/APMS2.dir/StringReverser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/StringReverser.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/StringReverser.cpp"
-
-CMakeFiles/APMS2.dir/StringReverser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/StringReverser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/guy/Desktop/Milestone 2/Code/StringReverser.cpp" > CMakeFiles/APMS2.dir/StringReverser.cpp.i
-
-CMakeFiles/APMS2.dir/StringReverser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/StringReverser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/StringReverser.cpp" -o CMakeFiles/APMS2.dir/StringReverser.cpp.s
-
 CMakeFiles/APMS2.dir/main.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/APMS2.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/APMS2.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/main.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/main.cpp"
 
 CMakeFiles/APMS2.dir/main.cpp.i: cmake_force
@@ -135,35 +96,9 @@ CMakeFiles/APMS2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/main.cpp" -o CMakeFiles/APMS2.dir/main.cpp.s
 
-CMakeFiles/APMS2.dir/State.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/State.cpp.o: ../State.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/APMS2.dir/State.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/State.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/State.cpp"
-
-CMakeFiles/APMS2.dir/State.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/State.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/guy/Desktop/Milestone 2/Code/State.cpp" > CMakeFiles/APMS2.dir/State.cpp.i
-
-CMakeFiles/APMS2.dir/State.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/State.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/State.cpp" -o CMakeFiles/APMS2.dir/State.cpp.s
-
-CMakeFiles/APMS2.dir/Searcher.cpp.o: CMakeFiles/APMS2.dir/flags.make
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../Searcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/APMS2.dir/Searcher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/Searcher.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/Searcher.cpp"
-
-CMakeFiles/APMS2.dir/Searcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/APMS2.dir/Searcher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/guy/Desktop/Milestone 2/Code/Searcher.cpp" > CMakeFiles/APMS2.dir/Searcher.cpp.i
-
-CMakeFiles/APMS2.dir/Searcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/APMS2.dir/Searcher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/guy/Desktop/Milestone 2/Code/Searcher.cpp" -o CMakeFiles/APMS2.dir/Searcher.cpp.s
-
 CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../SearchableforMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/SearchableforMatrix.cpp"
 
 CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.i: cmake_force
@@ -176,7 +111,7 @@ CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.s: cmake_force
 
 CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/MatrixHandler.cpp.o: ../MatrixHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/APMS2.dir/MatrixHandler.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/MatrixHandler.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/MatrixHandler.cpp"
 
 CMakeFiles/APMS2.dir/MatrixHandler.cpp.i: cmake_force
@@ -189,7 +124,7 @@ CMakeFiles/APMS2.dir/MatrixHandler.cpp.s: cmake_force
 
 CMakeFiles/APMS2.dir/ParallelServer.cpp.o: CMakeFiles/APMS2.dir/flags.make
 CMakeFiles/APMS2.dir/ParallelServer.cpp.o: ../ParallelServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/APMS2.dir/ParallelServer.cpp.o -c "/home/guy/Desktop/Milestone 2/Code/ParallelServer.cpp"
 
 CMakeFiles/APMS2.dir/ParallelServer.cpp.i: cmake_force
@@ -203,13 +138,8 @@ CMakeFiles/APMS2.dir/ParallelServer.cpp.s: cmake_force
 # Object files for target APMS2
 APMS2_OBJECTS = \
 "CMakeFiles/APMS2.dir/MySerialServer.cpp.o" \
-"CMakeFiles/APMS2.dir/server_file.cpp.o" \
 "CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o" \
-"CMakeFiles/APMS2.dir/Solver.cpp.o" \
-"CMakeFiles/APMS2.dir/StringReverser.cpp.o" \
 "CMakeFiles/APMS2.dir/main.cpp.o" \
-"CMakeFiles/APMS2.dir/State.cpp.o" \
-"CMakeFiles/APMS2.dir/Searcher.cpp.o" \
 "CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o" \
 "CMakeFiles/APMS2.dir/MatrixHandler.cpp.o" \
 "CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
@@ -218,19 +148,14 @@ APMS2_OBJECTS = \
 APMS2_EXTERNAL_OBJECTS =
 
 APMS2: CMakeFiles/APMS2.dir/MySerialServer.cpp.o
-APMS2: CMakeFiles/APMS2.dir/server_file.cpp.o
 APMS2: CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o
-APMS2: CMakeFiles/APMS2.dir/Solver.cpp.o
-APMS2: CMakeFiles/APMS2.dir/StringReverser.cpp.o
 APMS2: CMakeFiles/APMS2.dir/main.cpp.o
-APMS2: CMakeFiles/APMS2.dir/State.cpp.o
-APMS2: CMakeFiles/APMS2.dir/Searcher.cpp.o
 APMS2: CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o
 APMS2: CMakeFiles/APMS2.dir/MatrixHandler.cpp.o
 APMS2: CMakeFiles/APMS2.dir/ParallelServer.cpp.o
 APMS2: CMakeFiles/APMS2.dir/build.make
 APMS2: CMakeFiles/APMS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable APMS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable APMS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/APMS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

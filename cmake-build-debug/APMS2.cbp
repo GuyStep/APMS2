@@ -158,25 +158,13 @@
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/SearchableforMatrix.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/Desktop/Milestone 2/Code/Searcher.cpp">
-			<Option target="APMS2"/>
-		</Unit>
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/Searcher.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/Desktop/Milestone 2/Code/Solver.cpp">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/Solver.h">
 			<Option target="APMS2"/>
 		</Unit>
-		<Unit filename="/home/guy/Desktop/Milestone 2/Code/State.cpp">
-			<Option target="APMS2"/>
-		</Unit>
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/State.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/Desktop/Milestone 2/Code/StringReverser.cpp">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/StringReverser.h">
@@ -186,9 +174,6 @@
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/mtxSolver.h">
-			<Option target="APMS2"/>
-		</Unit>
-		<Unit filename="/home/guy/Desktop/Milestone 2/Code/server_file.cpp">
 			<Option target="APMS2"/>
 		</Unit>
 		<Unit filename="/home/guy/Desktop/Milestone 2/Code/server_file.h">

@@ -9,12 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/guy/Desktop/Milestone 2/Code/MyTestClientHandler.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/MyTestClientHandler.cpp.o"
   "/home/guy/Desktop/Milestone 2/Code/ParallelServer.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/ParallelServer.cpp.o"
   "/home/guy/Desktop/Milestone 2/Code/SearchableforMatrix.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o"
-  "/home/guy/Desktop/Milestone 2/Code/Searcher.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/Searcher.cpp.o"
-  "/home/guy/Desktop/Milestone 2/Code/Solver.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/Solver.cpp.o"
-  "/home/guy/Desktop/Milestone 2/Code/State.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/State.cpp.o"
-  "/home/guy/Desktop/Milestone 2/Code/StringReverser.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/StringReverser.cpp.o"
   "/home/guy/Desktop/Milestone 2/Code/main.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/main.cpp.o"
-  "/home/guy/Desktop/Milestone 2/Code/server_file.cpp" "/home/guy/Desktop/Milestone 2/Code/cmake-build-debug/CMakeFiles/APMS2.dir/server_file.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

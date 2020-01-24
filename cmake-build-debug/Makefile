@@ -258,114 +258,6 @@ SearchableforMatrix.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.s
 .PHONY : SearchableforMatrix.cpp.s
 
-Searcher.o: Searcher.cpp.o
-
-.PHONY : Searcher.o
-
-# target to build an object file
-Searcher.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searcher.cpp.o
-.PHONY : Searcher.cpp.o
-
-Searcher.i: Searcher.cpp.i
-
-.PHONY : Searcher.i
-
-# target to preprocess a source file
-Searcher.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searcher.cpp.i
-.PHONY : Searcher.cpp.i
-
-Searcher.s: Searcher.cpp.s
-
-.PHONY : Searcher.s
-
-# target to generate assembly for a file
-Searcher.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Searcher.cpp.s
-.PHONY : Searcher.cpp.s
-
-Solver.o: Solver.cpp.o
-
-.PHONY : Solver.o
-
-# target to build an object file
-Solver.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.o
-.PHONY : Solver.cpp.o
-
-Solver.i: Solver.cpp.i
-
-.PHONY : Solver.i
-
-# target to preprocess a source file
-Solver.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.i
-.PHONY : Solver.cpp.i
-
-Solver.s: Solver.cpp.s
-
-.PHONY : Solver.s
-
-# target to generate assembly for a file
-Solver.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/Solver.cpp.s
-.PHONY : Solver.cpp.s
-
-State.o: State.cpp.o
-
-.PHONY : State.o
-
-# target to build an object file
-State.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/State.cpp.o
-.PHONY : State.cpp.o
-
-State.i: State.cpp.i
-
-.PHONY : State.i
-
-# target to preprocess a source file
-State.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/State.cpp.i
-.PHONY : State.cpp.i
-
-State.s: State.cpp.s
-
-.PHONY : State.s
-
-# target to generate assembly for a file
-State.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/State.cpp.s
-.PHONY : State.cpp.s
-
-StringReverser.o: StringReverser.cpp.o
-
-.PHONY : StringReverser.o
-
-# target to build an object file
-StringReverser.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.o
-.PHONY : StringReverser.cpp.o
-
-StringReverser.i: StringReverser.cpp.i
-
-.PHONY : StringReverser.i
-
-# target to preprocess a source file
-StringReverser.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.i
-.PHONY : StringReverser.cpp.i
-
-StringReverser.s: StringReverser.cpp.s
-
-.PHONY : StringReverser.s
-
-# target to generate assembly for a file
-StringReverser.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/StringReverser.cpp.s
-.PHONY : StringReverser.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -393,33 +285,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-server_file.o: server_file.cpp.o
-
-.PHONY : server_file.o
-
-# target to build an object file
-server_file.cpp.o:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/server_file.cpp.o
-.PHONY : server_file.cpp.o
-
-server_file.i: server_file.cpp.i
-
-.PHONY : server_file.i
-
-# target to preprocess a source file
-server_file.cpp.i:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/server_file.cpp.i
-.PHONY : server_file.cpp.i
-
-server_file.s: server_file.cpp.s
-
-.PHONY : server_file.s
-
-# target to generate assembly for a file
-server_file.cpp.s:
-	$(MAKE) -f CMakeFiles/APMS2.dir/build.make CMakeFiles/APMS2.dir/server_file.cpp.s
-.PHONY : server_file.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,24 +309,9 @@ help:
 	@echo "... SearchableforMatrix.o"
 	@echo "... SearchableforMatrix.i"
 	@echo "... SearchableforMatrix.s"
-	@echo "... Searcher.o"
-	@echo "... Searcher.i"
-	@echo "... Searcher.s"
-	@echo "... Solver.o"
-	@echo "... Solver.i"
-	@echo "... Solver.s"
-	@echo "... State.o"
-	@echo "... State.i"
-	@echo "... State.s"
-	@echo "... StringReverser.o"
-	@echo "... StringReverser.i"
-	@echo "... StringReverser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... server_file.o"
-	@echo "... server_file.i"
-	@echo "... server_file.s"
 .PHONY : help
 
 

@@ -35,23 +35,6 @@ CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../SearchableforMatrix.cpp
 CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../SearchableforMatrix.h
 CMakeFiles/APMS2.dir/SearchableforMatrix.cpp.o: ../State.h
 
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../DataManager.h
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../ISearcher.h
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../Searchable.h
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../Searcher.cpp
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../Searcher.h
-CMakeFiles/APMS2.dir/Searcher.cpp.o: ../State.h
-
-CMakeFiles/APMS2.dir/Solver.cpp.o: ../Solver.cpp
-CMakeFiles/APMS2.dir/Solver.cpp.o: ../Solver.h
-
-CMakeFiles/APMS2.dir/State.cpp.o: ../State.cpp
-CMakeFiles/APMS2.dir/State.cpp.o: ../State.h
-
-CMakeFiles/APMS2.dir/StringReverser.cpp.o: ../Solver.h
-CMakeFiles/APMS2.dir/StringReverser.cpp.o: ../StringReverser.cpp
-CMakeFiles/APMS2.dir/StringReverser.cpp.o: ../StringReverser.h
-
 CMakeFiles/APMS2.dir/main.cpp.o: ../AStar.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../AlgoQueue.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../AlgoStack.h
@@ -78,8 +61,4 @@ CMakeFiles/APMS2.dir/main.cpp.o: ../StringReverser.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../main.cpp
 CMakeFiles/APMS2.dir/main.cpp.o: ../mtxSolver.h
 CMakeFiles/APMS2.dir/main.cpp.o: ../server_file.h
-
-CMakeFiles/APMS2.dir/server_file.cpp.o: ../ClientHandler.h
-CMakeFiles/APMS2.dir/server_file.cpp.o: ../server_file.cpp
-CMakeFiles/APMS2.dir/server_file.cpp.o: ../server_file.h
 

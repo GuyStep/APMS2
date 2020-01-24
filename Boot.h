@@ -5,7 +5,7 @@
 #ifndef APMS2__BOOT_H_
 #define APMS2__BOOT_H_
 
-#include "MySerialServer.h";
+#include "MySerialServer.h"
 #include "MyTestClientHandler.h"
 #include "StringReverser.h"
 #include "FileCacheManager.h"
@@ -23,7 +23,7 @@ namespace boot {
 class Main {
  public:
     //Main function, ran by user
-    int mainFunc(int argc, char** argv) {
+    int main_func(int argc, char** argv) {
     auto *fcm = new FileCacheManager();
     auto *solver = new server_side::mtxSolver(new AStar<T >());
     auto* ch = new MatrixHandler(solver,fcm);
