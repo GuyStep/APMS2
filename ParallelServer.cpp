@@ -33,7 +33,11 @@ void ParallelServer::serv_instance(int socket, bool *stop, ClientHandler *client
                 break;
             }
             if (errno == EWOULDBLOCK) {
-                continue;
+				server_stop = true;
+				perror("Connection Timeout");
+				continue;
+
+				//break;
             }
             perror("Failed accepting client");
             exit(1);
@@ -48,7 +52,7 @@ void ParallelServer::serv_instance(int socket, bool *stop, ClientHandler *client
         threads_vector.push_back(single_thread);
 
         timeval timeout;
-        timeout.tv_sec = 5;
+        timeout.tv_sec = 120;
         timeout.tv_usec = 0;
         setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
     }
