@@ -25,13 +25,14 @@ protected:
     vector<pthread_t> threads_vector;
     bool server_stop = false;
 
-    void stop() override;
 
     static void *server_thread(void *arg) ;
-    virtual void unique(int socket, bool *stop, ClientHandler *client);
+    virtual void serv_instance(int socket, bool *stop, ClientHandler *client);
 
 public:
-    void open(int port, ClientHandler *c) override;
+	void stop() override;
+
+	void open(int port, ClientHandler *c) override;
 };
 
 typedef struct {

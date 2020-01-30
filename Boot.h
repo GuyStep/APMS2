@@ -30,8 +30,8 @@ class Main {
     auto* server = new ParallelServer();
     //Open the server, with port received as argument
     server->open(atoi(argv[1]),ch);
-
-    return 0;
+	server->stop();
+	return 0;
   }
 };
 }

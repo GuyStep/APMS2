@@ -14,22 +14,22 @@ void *ParallelServer::handler_thread(void *arg) {
     return nullptr;
 }
 
-void ParallelServer::unique(int socket, bool *shouldStop, ClientHandler *client) {
+void ParallelServer::serv_instance(int socket, bool *stop, ClientHandler *client) {
     int socketFd = socket;
     int newsockfd;
-    int clilen;
+    int clien;
 
     vector<pthread_t> threads_vector;
 
     struct sockaddr_in serv_addr, cli_addr;
     listen(socketFd, 10);
 
-    clilen = sizeof(cli_addr);
+	clien = sizeof(cli_addr);
 
     while (true) {
-        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
+        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clien);
         if (newsockfd < 0) {
-            if (*shouldStop) {
+            if (*stop) {
                 break;
             }
             if (errno == EWOULDBLOCK) {
@@ -48,7 +48,7 @@ void ParallelServer::unique(int socket, bool *shouldStop, ClientHandler *client)
         threads_vector.push_back(single_thread);
 
         timeval timeout;
-        timeout.tv_sec = 15;
+        timeout.tv_sec = 5;
         timeout.tv_usec = 0;
         setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
     }
@@ -103,7 +103,7 @@ void *ParallelServer::server_thread(void *arg) {
         exit(1);
     }
 
-    server->server->unique(socketFd, server->stop_server, server->client );
+	server->server->serv_instance(socketFd, server->stop_server, server->client);
 
     close(socketFd);
     delete (server->client);
